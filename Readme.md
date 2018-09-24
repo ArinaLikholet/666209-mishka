@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Лихолет](https://up.htmlacademy.ru/adaptive/15/user/666209).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Алипкин`.
 
 ---
 
