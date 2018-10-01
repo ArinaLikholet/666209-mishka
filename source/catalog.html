@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог вязанных изделий</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+
+      <button class="main-nav__toggle" type="button" title="Меню">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="main-nav--list">
+
+        <li class="main-nav--item">
+          <a class="main-nav--logo">
+            <img src="#" width="86" height="35" alt="Мишка">
+          </a>
+        </li>
+
+        <li class="main-nav--item">
+          <a href="catalog.html">Каталог товаров></a>
+        </li>
+
+        <li class="main-nav--item">
+          <a href="form.html">Вязание на заказ</a>>
+        </li>
+
+        <li class="main-nav--item">
+          <a href="search.html">Поиск по сайту</a>
+        </li>
+
+        <li class="main-nav--item">
+          <a href="basket.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="main-header">Каталог товаров</h1>
+    <section class="cards">
+
+      <article class="card">
+
+        <a href="#" class="card--img-link">
+        <img class="card-link--image" src="#" alt="Зайчик-попрыгайчик" width="260px" height="195px">
+        </a>
+
+        <a href="#" class="card--description">
+          <h2>Зайчик-попрыгайчик</h2>
+        </a>
+
+        <p class="card--parameter">Рост 30 см, вес 200 г</p>
+        <b class="card--price">1 200 руб.</b>
+        <span class="card--icon"></span>
+
+      </article>
+
+      <article class="card">
+
+        <a href="#" class="card--img-link">
+          <img class="card-link--image" src="#" alt="Корзинка для белья" width="260px" height="195px">
+        </a>
+
+        <a href="#" class="card--description">
+          <h2>Корзинка для белья</h2>
+        </a>
+
+        <p class="card--parameter">Диаметр 15 см, высота 10 см</p>
+        <b class="card--price">690 руб.</b>
+        <span class="card--icon"></span>
+
+      </article>
+
+      <article class="card">
+
+        <a href="#" class="card--img-link">
+          <img class="card-link--image" src="#" alt="Большая корзинка для игрушек" width="260px" height="195px">
+        </a>
+
+        <a href="#" class="card--description">
+          <h2>Большая корзинка для игрушек</h2>
+        </a>
+
+        <p class="card--parameter">Диаметр 30 см, высота 30 см</p>
+        <b class="card--price">1 500 руб.</b>
+        <span class="card--icon"></span>
+
+      </article>
+    </section>
+    <section class="production">
+
+      <div class="production-top">
+
+        <span class="production-top--icon"></span>
+
+        <h2 class="production-top--header">Процесс производства</h2>
+      </div>
+
+      <div class="production-player">
+        <img src="#" width="260" height="150" alt="Процесс производства">
+        <button class="production-payer--button">Воспроизвести</button>
+      </div>
+
+      <div class="production--description">
+        <p class="production--text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production--button" href="form.html">Сделать заказ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <a class="logo logo--footer"></a>
+    <div class="main-footer--social">
+
+      <ul class="social--list">
+
+        <li class="social--item">
+          <a class="social--link social--link__inst" href="#" title="Инстаграм">Мы в Инстаграме</a>
+        </li>
+        <li class="social--item">
+          <a class="social--link social--link__facebook" href="#" title="Фейсбук">Мы в Фейсбуке</a>
+        </li>
+        <li class="social--item">
+          <a class="social--link social--link__twitter" href="#" title="Твиттер">Мы в Твиттере</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-footer--copyright">
+      <b class="copyright--text">Разработано</b>
+      <a class="copyright--link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+    </div>
+  </footer>
+
+  <div class="modal-yourSize">
+    <b class="modal-yourSize--title">Добавить в корзину</b>
+
+    <form class="modal-yourSize--form" method="post" action="http://echo.htmlacademy.ru/">
+      <p class="modal-yourSize--caption">Выберите размер:</p>
+
+      <div class="modal-yourSize--inner">
+        <input class="modal-yourSize--input" type="radio" id="size-s" name="size" checked>
+        <label class="modal-yourSize--label" for="size-s">s</label>
+
+        <input class="modal-yourSize--input" type="radio" id="size-m" name="size">
+        <label class="modal-yourSize--label" for="size-m">m</label>
+
+        <input class="modal-yourSize--input" type="radio" id="size-l" name="size">
+        <label class="modal-yourSize--label" for="size-l">l</label>
+      </div>
+
+      <button class="button" type="submit">Добавить</button>
+    </form>
+  </div>
+</body>
+</html>
