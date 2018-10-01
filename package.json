@@ -11,7 +11,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
+    "test": "yarn run editorconfig"
   },
   "editorconfig-cli": [
     "*.json",
