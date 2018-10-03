@@ -4,8 +4,14 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "autoprefixer": "9.1.x",
+    "browser-sync": "2.24.x",
+    "gulp": "4.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "9.5.x",
+    "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -13,9 +19,18 @@
     "stylelint": "stylelint .",
     "test": "yarn run editorconfig"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.12"
