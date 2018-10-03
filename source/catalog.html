@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Каталог вязанных изделий</title>
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url( "../preview/mishka-catalog-mobile.jpg");
+    }
+    /* Планшет */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url( "img/760.png" );
+      }
+    }
+    /* Десктоп */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url( "img/960.png" );
+      }
+    }
+
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
+  <meta charset="UTF-8">
+        <title>Каталог вязанных изделий</title>
 </head>
 <body>
   <header class="main-header">
     <nav class="main-nav">
 
-      <button class="main-nav__toggle" type="button" title="Меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-nav__wrapper">
 
-      <ul class="main-nav--list">
+        <button class="main-nav__toggle" type="button" title="Меню">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-        <li class="main-nav--item">
-          <a class="main-nav--logo">
-            <img src="#" width="86" height="35" alt="Мишка">
-          </a>
+        <a class="main-nav__logo">
+          <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
+        </a>
+      </div>
+      <ul class="main-nav__list">
+
+        <li class="main-nav__item">
+          <a href="catalog.html">Каталог товаров</a>
         </li>
 
-        <li class="main-nav--item">
-          <a href="catalog.html">Каталог товаров></a>
+        <li class="main-nav__item">
+          <a href="form.html">Вязание на заказ</a>
         </li>
 
-        <li class="main-nav--item">
-          <a href="form.html">Вязание на заказ</a>>
-        </li>
-
-        <li class="main-nav--item">
+        <li class="main-nav__item main-nav__item--search">
           <a href="search.html">Поиск по сайту</a>
         </li>
 
-        <li class="main-nav--item">
+        <li class="main-nav__item main-nav__item--cart">
           <a href="basket.html">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -41,120 +69,115 @@
   </header>
 
   <main>
-    <h1 class="main-header">Каталог товаров</h1>
+    <section class="banner">
+      <h1 class="main-header">Каталог товаров</h1>
+    </section>
+
     <section class="cards">
-
+      <h2 class="visually-hidden">Наша продукция</h2>
       <article class="card">
 
-        <a href="#" class="card--img-link">
-        <img class="card-link--image" src="#" alt="Зайчик-попрыгайчик" width="260px" height="195px">
+        <a href="#" class="card__img-link">
+          <img class="card__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
         </a>
 
-        <a href="#" class="card--description">
-          <h2>Зайчик-попрыгайчик</h2>
-        </a>
+        <h2 class="card__description">
+          <a href="#">Зайчик-попрыгайчик</a>
+        </h2>
 
-        <p class="card--parameter">Рост 30 см, вес 200 г</p>
-        <b class="card--price">1 200 руб.</b>
-        <span class="card--icon"></span>
+
+        <p class="card__text">Рост 30 см, вес 200 г</p>
+        <p class="card__price">1 200 руб.</p>
+
 
       </article>
 
       <article class="card">
 
-        <a href="#" class="card--img-link">
-          <img class="card-link--image" src="#" alt="Корзинка для белья" width="260px" height="195px">
+        <a href="#" class="card__img-link">
+          <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
         </a>
 
-        <a href="#" class="card--description">
-          <h2>Корзинка для белья</h2>
-        </a>
+        <h2 class="card__description">
+          <a href="#" >Корзинка для белья</a>
+        </h2>
 
-        <p class="card--parameter">Диаметр 15 см, высота 10 см</p>
-        <b class="card--price">690 руб.</b>
-        <span class="card--icon"></span>
+        <p class="card__text">Диаметр 15 см, высота 10 см</p>
+        <p class="card__price">690 руб.</p>
 
       </article>
 
       <article class="card">
 
-        <a href="#" class="card--img-link">
-          <img class="card-link--image" src="#" alt="Большая корзинка для игрушек" width="260px" height="195px">
+        <a href="#" class="card__img-link">
+          <img class="card__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
         </a>
 
-        <a href="#" class="card--description">
-          <h2>Большая корзинка для игрушек</h2>
-        </a>
+        <h2 class="card__description">
+          <a href="#" >Большая корзинка для игрушек</a>
+        </h2>
 
-        <p class="card--parameter">Диаметр 30 см, высота 30 см</p>
-        <b class="card--price">1 500 руб.</b>
-        <span class="card--icon"></span>
+        <p class="card__text">Диаметр 30 см, высота 30 см</p>
+        <p class="card__price">1 500 руб.</p>
 
       </article>
     </section>
     <section class="production">
-
-      <div class="production-top">
-
-        <span class="production-top--icon"></span>
-
-        <h2 class="production-top--header">Процесс производства</h2>
-      </div>
+      <h2 class="production__title">Процесс производства</h2>
 
       <div class="production-player">
-        <img src="#" width="260" height="150" alt="Процесс производства">
-        <button class="production-payer--button">Воспроизвести</button>
+        <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+        <button class="production__payer-button">Воспроизвести</button>
       </div>
 
-      <div class="production--description">
-        <p class="production--text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production--button" href="form.html">Сделать заказ</a>
+      <div class="production__description">
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button button" href="../../../mishka%20copy/source/form.html">Сделать заказ</a>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <a class="logo logo--footer"></a>
-    <div class="main-footer--social">
 
-      <ul class="social--list">
+    <a class="logo logo__footer"></a>
 
-        <li class="social--item">
-          <a class="social--link social--link__inst" href="#" title="Инстаграм">Мы в Инстаграме</a>
-        </li>
-        <li class="social--item">
-          <a class="social--link social--link__facebook" href="#" title="Фейсбук">Мы в Фейсбуке</a>
-        </li>
-        <li class="social--item">
-          <a class="social--link social--link__twitter" href="#" title="Твиттер">Мы в Твиттере</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="main-footer social-list">
 
-    <div class="main-footer--copyright">
-      <b class="copyright--text">Разработано</b>
-      <a class="copyright--link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--inst" href="#" title="Инстаграм">Мы в Инстаграме</a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#" title="Фейсбук">Мы в Фейсбуке</a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#" title="Твиттер">Мы в Твиттере</a>
+      </li>
+    </ul>
+
+    <div class="main-footer__copyright">
+      <b class="main-footer__copyright-text">Разработано</b>
+      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
     </div>
   </footer>
 
-  <div class="modal-yourSize">
-    <b class="modal-yourSize--title">Добавить в корзину</b>
+  <div class="modal">
+    <h3 class="modal__title">Добавить в корзину</h3>
 
-    <form class="modal-yourSize--form" method="post" action="http://echo.htmlacademy.ru/">
-      <p class="modal-yourSize--caption">Выберите размер:</p>
+    <form class="modal__form" method="post" action="http://echo.htmlacademy.ru/">
+      <p class="modal__caption">Выберите размер:</p>
 
-      <div class="modal-yourSize--inner">
-        <input class="modal-yourSize--input" type="radio" id="size-s" name="size" checked>
-        <label class="modal-yourSize--label" for="size-s">s</label>
-
-        <input class="modal-yourSize--input" type="radio" id="size-m" name="size">
-        <label class="modal-yourSize--label" for="size-m">m</label>
-
-        <input class="modal-yourSize--input" type="radio" id="size-l" name="size">
-        <label class="modal-yourSize--label" for="size-l">l</label>
+      <div class="modal__inner">
+        <input class="modal__input" type="radio" id="size-s" name="size" checked>
+        <label class="modal__label" for="size-s">s</label>
+        <input class="modal__input" type="radio" id="size-m" name="size">
+        <label class="modal__label" for="size-m">m</label>
+        <input class="modal__input" type="radio" id="size-l" name="size">
+        <label class="modal__label" for="size-l">l</label>
       </div>
 
-      <button class="button" type="submit">Добавить</button>
+      <button class="button button-green" type="submit">Добавить</button>
     </form>
   </div>
 </body>
