@@ -30,7 +30,7 @@
   <!-- // Pixel Glass -->
 
   <meta charset="UTF-8">
-        <title>Каталог вязанных изделий</title>
+  <title>Каталог вязанных изделий</title>
 </head>
 <body>
   <header class="main-header">
@@ -39,7 +39,7 @@
       <div class="main-nav__wrapper">
 
         <button class="main-nav__toggle" type="button" title="Меню">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Кнопка меню</span>
         </button>
 
         <a class="main-nav__logo">
@@ -56,12 +56,12 @@
           <a href="form.html">Вязание на заказ</a>
         </li>
 
-        <li class="main-nav__item main-nav__item--search">
-          <a href="search.html">Поиск по сайту</a>
+        <li class="main-nav__item">
+          <a class="main-nav__item--search" href="search.html">Поиск по сайту</a>
         </li>
 
-        <li class="main-nav__item main-nav__item--cart">
-          <a href="basket.html">Корзина: пока пуста</a>
+        <li class="main-nav__item">
+          <a class="main-nav__item--cart" href="basket.html">Корзина: пока пуста</a>
         </li>
       </ul>
 
@@ -87,9 +87,11 @@
 
 
         <p class="card__text">Рост 30 см, вес 200 г</p>
-        <p class="card__price">1 200 руб.</p>
-
-
+        <p class="card__price">1 200 руб.
+          <a class="card__button" href="order.html" title="Купить">Купить
+            <svg class="icon icon--catalog-cart" width="21" height="19"></svg>
+          </a>
+        </p>
       </article>
 
       <article class="card">
@@ -103,8 +105,11 @@
         </h2>
 
         <p class="card__text">Диаметр 15 см, высота 10 см</p>
-        <p class="card__price">690 руб.</p>
-
+        <p class="card__price">690 руб.
+          <a class="card__button" href="order.html" title="Купить">Купить
+            <svg class="icon icon--catalog-cart" width="21" height="19"></svg>
+          </a>
+        </p>
       </article>
 
       <article class="card">
@@ -118,47 +123,56 @@
         </h2>
 
         <p class="card__text">Диаметр 30 см, высота 30 см</p>
-        <p class="card__price">1 500 руб.</p>
+        <p class="card__price">1 500 руб.
+          <a class="card__button" href="order.html" title="Купить">Купить
+            <svg class="icon icon--catalog-cart" width="21" height="19"></svg>
+          </a>
+        </p>
+
 
       </article>
     </section>
+
     <section class="production">
       <h2 class="production__title">Процесс производства</h2>
 
-      <div class="production-player">
+      <div class="production__player">
         <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
-        <button class="production__payer-button">Воспроизвести</button>
+        <button class="production__player-button">Воспроизвести</button>
       </div>
 
       <div class="production__description">
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__button button" href="../../../mishka%20copy/source/form.html">Сделать заказ</a>
+        <a class="production__button button" href="form.html">Сделать заказ</a>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
+    <div class="main-footer__wrap">
+      <a class="logo logo__footer"></a>
 
-    <a class="logo logo__footer"></a>
+      <div class="main-footer__social social">
+        <ul class="social-list">
 
-    <ul class="main-footer social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--inst" href="#" title="Инстаграм">Мы в Инстаграме</a>
+          </li>
 
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--inst" href="#" title="Инстаграм">Мы в Инстаграме</a>
-      </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#" title="Фейсбук">Мы в Фейсбуке</a>
+          </li>
 
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="#" title="Фейсбук">Мы в Фейсбуке</a>
-      </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" title="Твиттер">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
 
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--twitter" href="#" title="Твиттер">Мы в Твиттере</a>
-      </li>
-    </ul>
-
-    <div class="main-footer__copyright">
-      <b class="main-footer__copyright-text">Разработано</b>
-      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      </div>
     </div>
   </footer>
 
@@ -177,7 +191,7 @@
         <label class="modal__label" for="size-l">l</label>
       </div>
 
-      <button class="button button-green" type="submit">Добавить</button>
+      <button class="button button--green" type="submit">Добавить</button>
     </form>
   </div>
 </body>
