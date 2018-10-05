@@ -1,0 +1,24 @@
+.main-nav {
+  position: relative;
+  min-height: 79px;
+}
+
+.main-nav__wrapper {
+  padding: 22px 120px;
+}
+
+.main-nav__list {
+  @include indents;
+  list-style: none;
+}
+
+.main-nav__item {
+  @include indents(0, 0 30px);
+  border-bottom: $border-line;
+  background-color: $white;
+}
+
+.mail-link {
+  text-decoration: none;
+}
+

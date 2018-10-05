@@ -1,0 +1,4 @@
+.banner--toys {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+}
+
