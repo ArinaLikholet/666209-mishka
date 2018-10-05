@@ -1,0 +1,22 @@
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin font-set($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: 700;
+}
+
+@mixin caps($weight, $size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  text-transform: uppercase;
+}
+
+@mixin indents($margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+}
