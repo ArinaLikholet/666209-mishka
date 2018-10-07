@@ -1,0 +1,25 @@
+.promo-links {
+  @include indents(0 auto, 0);
+  list-style: none;
+  margin-top: -110px;
+}
+
+.promo-links__item {
+  background-color: $mint;
+  min-width: 320px;
+  padding: 25px 0 30px 35px;
+}
+
+.promo-links__item--dark {
+  background-color: #56c3b2;
+  min-width: 320px;
+}
+
+.promo-links__link {
+  @include font-set(19px, 24px);
+  text-decoration: none;
+  display: block;
+  color: $white;
+  width: 130px;
+  background-color: transparent;
+}

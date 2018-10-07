@@ -16,14 +16,14 @@
           <span class="visually-hidden">Кнопка меню</span>
         </button>
 
-        <a class="main-nav__logo">
+        <a class="main-nav__link main-nav__link--logo" href="index.html">
           <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
         </a>
       </div>
       <ul class="main-nav__list">
 
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__link">Каталог товаров</a>
         </li>
 
         <li class="main-nav__item">
@@ -54,18 +54,20 @@
         <a href="#" class="card__img-link">
           <img class="card__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
         </a>
+        <div class="card-info">
+          <h2 class="card__description">
+            <a href="#">Зайчик-попрыгайчик</a>
+          </h2>
 
-        <h2 class="card__description">
-          <a href="#">Зайчик-попрыгайчик</a>
-        </h2>
 
+          <p class="card__text">Рост 30 см, вес 200 г</p>
 
-        <p class="card__text">Рост 30 см, вес 200 г</p>
-        <p class="card__price">1 200 руб.
-          <a class="card__button" href="order.html" title="Купить">Купить
-            <svg class="icon icon__cart" width="21" height="19"></svg>
-          </a>
-        </p>
+          <p class="card__price">1 200 руб.
+            <a class="card__button" href="order.html" title="Купить">Купить
+              <svg class="icon icon__cart" width="21" height="19"></svg>
+            </a>
+          </p>
+        </div>
       </article>
 
       <article class="card">

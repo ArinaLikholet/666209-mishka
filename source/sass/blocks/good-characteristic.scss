@@ -1,0 +1,18 @@
+.good-characteristic {
+  @include font(15px, 20px);
+  color: $font-gray;
+  width: 260px;
+  height: 120px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+.good-characteristic__row {
+  border-bottom: $border;
+}
+
+.good-characteristic__col {
+  width: 70px;
+  margin-right: 10px;
+}

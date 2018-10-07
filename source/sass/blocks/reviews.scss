@@ -1,0 +1,22 @@
+.reviews {
+  @include indents();
+  min-width: 320px;
+  padding-top: 20px;
+}
+
+.reviews__slider {
+  position: relative;
+  margin: 0;
+  padding: 0 20px 35px 35px;
+}
+
+.reviews__title {
+  @include indents(0, 0 30px);
+  @include font-set(25px, 30px);
+  color: $black;
+}
+
+.reviews__button {
+  margin: 0 30px;
+  width: 260px;
+}

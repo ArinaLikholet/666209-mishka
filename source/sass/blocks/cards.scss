@@ -1,0 +1,89 @@
+.cards {
+  margin: 0 auto;
+  padding: 0px 30px 0 15px;
+}
+
+.card {
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.card__img-link {
+  @include indents();
+  display: block;
+  min-height: 195px;
+}
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  border: $border;
+}
+
+.card:hover > .card-info,
+.card:focus > .card-info {
+  box-shadow: 0 6px 10px rgba($black, 0.1);
+}
+
+.card:active > .card-info {
+  box-shadow: 0 3px 5px rgba($black, 0.1);
+}
+.card__description {
+  @include indents();
+}
+
+.card__description a {
+  text-decoration: none; @include indents();
+}
+
+.card__description a {
+  @include indents;
+  @include font-set(17px, 1.4);
+  color: $black;
+}
+
+.card__description a:hover,
+.card__description a:focus {
+  opacity: 0.6;
+}
+
+.card__description a:active {
+  opacity: 0.3;
+}
+
+.card__text {
+  @include indents(0, 10px 0 25px);
+  @include font(13px, 1.4);
+  color: $font-gray;
+}
+
+.card__price {
+  @include font-set(15px, 24px);
+  color: $black;
+  border-top: $border;
+  padding-top: 30px;
+}
+
+.card__button {
+  display: block;
+  width: 20px;
+  height: 22px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.card__button:hover .icon--catalog-cart,
+.card__button:focus .icon--catalog-cart {
+  fill: $mint;
+  opacity: 1;
+}
+
+.card__button:active .icon--catalog-cart {
+  fill: $mint;
+  opacity: 0.3;
+}
