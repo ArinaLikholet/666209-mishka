@@ -15,10 +15,11 @@
 }
 
 .banner__title {
-  width: 245px;
+  width: 260px;
   margin-top: 70px;
   text-align: center;
-  padding: 0 30px 75px 21px;
+  padding: 0 30px 85px 21px;
   color: $black;
-  @include font-set(27px, 1.11)
+
+  @include font-set(27px, 1.11);
 }

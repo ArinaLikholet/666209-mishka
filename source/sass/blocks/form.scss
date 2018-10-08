@@ -1,0 +1,190 @@
+.form-description {
+  font-size: 13px;
+  line-height: 24px;
+  margin: 23px 30px;
+  padding: 0;
+  color: $font-gray;
+}
+
+.order-wrapper {
+  @include indents();
+  border: none;
+  padding: 0 30px 10px 30px;
+}
+
+.form__inner {
+  margin: 0;
+  padding: 0 30px 32px;
+  margin-bottom: 12px;
+}
+
+.form__legend {
+  @include caps(700, $font-size, 18px);
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0 0 23px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.form__legend::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 76%;
+  height: 1px;
+  background-color: #63d1bb;
+}
+
+//стили для радио и чекбокса
+
+.form__radio-input,
+.form__checkbox-input {
+  display: none;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  font-family: $font-family;
+  position: relative;
+  display: block;
+  padding-left: 63px;
+  padding-top: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+  cursor: pointer;
+}
+
+.form__radio-label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $font-gray;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    background-color: $color-form;
+    border-radius: 50%;
+    display: none;
+  }
+}
+
+.form__radio-input:checked + .form__radio-label::after,
+.form__checkbox-input:checked + .form__checkbox-label::after {
+  display: block;
+}
+
+
+.form__checkbox-label {
+  padding-bottom: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $font-gray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 22px;
+    height: 10px;
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+    transform: rotate(-45deg);
+    background-color: transparent;
+    display: none;
+  }
+}
+
+.form__radio-input:hover + .form__radio-label::before,
+.form__radio-input:focus + .form__radio-label::before,
+.form__checkbox-input:hover + .form__checkbox-label::before,
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  border-color: $color-form;
+}
+
+.form__radio-input:active + .form__radio-label::before,
+.form__checkbox-input:active + .form__checkbox-label::before {
+  border-color: $font-gray;
+  opacity: 0.3;
+}
+
+// стили для формы ФИО
+
+.form__text-label {
+  @include font-set($font-size, 18px);
+  color: $black;
+  padding-top: 20px;
+}
+
+.form__text-input {
+  @include font(17px, 18px);
+  width: 99%;
+  font-family: $font-family;
+  color: $font-gray;
+  border: none;
+  box-shadow: inset 0 -2px 0 $black;
+  padding: 10px 0;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 $color-form;
+  }
+}
+// стили для сообщений
+.form__message {
+  width: 85%;
+  height: 104px;
+  padding: 17px;
+
+  @include font($font-size, 18px);
+  font-family: $font-family;
+  color: $font-gray;
+  border: 2px solid $font-gray;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-form;
+  }
+}
+
+.order-form__footer {
+  @include indents(8px 30px 55px, 0);
+}
+
+.order-form__caption {
+  @include font(14px, 16px);
+  color: $font-gray;
+}
+
+.form__button {
+  width: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
