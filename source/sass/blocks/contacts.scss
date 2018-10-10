@@ -9,8 +9,8 @@
 }
 
 .contacts__inner {
-  display: flex;
   @include indents(0 auto, 0);
+  display: flex;
   padding: 0 30px 25px;
 }
 

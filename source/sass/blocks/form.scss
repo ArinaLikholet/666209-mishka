@@ -6,7 +6,7 @@
   color: $font-gray;
 }
 
-.order-wrapper {
+.form__order-wrapper {
   @include indents();
   border: none;
   padding: 0 30px 10px 30px;
@@ -174,11 +174,11 @@
   }
 }
 
-.order-form__footer {
+.form__footer {
   @include indents(8px 30px 55px, 0);
 }
 
-.order-form__caption {
+.form__caption {
   @include font(14px, 16px);
   color: $font-gray;
 }

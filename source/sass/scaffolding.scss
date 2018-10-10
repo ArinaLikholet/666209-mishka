@@ -44,4 +44,14 @@ body {
   overflow: hidden;
 }
 
+// блоки без БЭМ элементов
+.main-footer__wrap {
+  @include indents(0 auto, 0);
+  min-width: 260px;
+}
 
+.page-subtitle {
+  @include font-set(25px, 1.2);
+  @include indents();
+  padding-top: 30px;
+}

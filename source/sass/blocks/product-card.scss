@@ -4,16 +4,10 @@
   padding-left: 10px;
 }
 
-.page-subtitle {
-  @include font-set(25px, 1.2);
-  @include indents();
-  padding-top: 30px;
-}
-
 .product-card__subtitle {
   @include caps(700, 17px, 1.18);
-  color: $mint;
   @include indents();
+  color: $mint;
 }
 
 .product-card__description {
