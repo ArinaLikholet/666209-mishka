@@ -1,9 +1,3 @@
-.product-card {
-  @include indents(0 auto, 0);
-  width: 260px;
-  padding-left: 10px;
-}
-
 .product-card__subtitle {
   @include caps(700, 17px, 1.18);
   @include indents();

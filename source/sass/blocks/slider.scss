@@ -1,7 +1,3 @@
-.slider {
-  min-width: 320px;
-}
-
 .slider__list {
   @include indents();
   list-style: none;
@@ -16,8 +12,7 @@
 }
 
 .slider__item {
-  width: 255px;
-  padding: 25px 30px 40px 0;
+  padding: 25px 0 40px 0;
 }
 
 .slider__item--second {
@@ -30,14 +25,13 @@
 
 .slider__nav {
   display: flex;
-  width: 260px;
 }
 
 .slider__button {
   position: relative;
-  width: 130px;
+  width: 50%;
   height: 51px;
-  margin: 0;
+  margin: 38px 0;
   padding: 0;
   border: 1px solid #ececec;
   background-color: $white;

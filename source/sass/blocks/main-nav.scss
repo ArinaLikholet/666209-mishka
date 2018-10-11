@@ -4,13 +4,17 @@
   background-color: $white;
 }
 
+.main-nav__logo-wrapper {
+  margin: 0 -30px;
+}
+
 .main-nav__list {
-  @include indents(0 auto, 0);
+  @include indents(0 -30px, 0);
   list-style: none;
 }
 
 .main-nav__item {
-  @include indents(0, 0 30px);
+  @include indents(0, 0);
   min-width: 260px;
   border-bottom: $border;
   background-color: $white;

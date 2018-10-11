@@ -1,7 +1,8 @@
 @import "variables";
 @import "mixsins";
-@import "normalize";
+@import "../css/normalize.css";
 @import "scaffolding";
+@import "blocks/container.sccs";
 @import "blocks/main-nav";
 @import "blocks/banner";
 @import "blocks/promo-links";
@@ -13,7 +14,8 @@
 @import "blocks/slider";
 @import "blocks/contacts";
 @import "blocks/social-list";
+@import "blocks/copyright";
 @import "blocks/modal";
-@import "blocks/cards";
+@import "blocks/card";
 @import "blocks/production";
 @import "blocks/form";

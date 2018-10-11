@@ -1,6 +1,6 @@
 .banner {
-  @include indents(0 auto, 0);
-  width: 320px;
+  margin: 0 -30px 30px -30px;
+  padding: 70px 0;
   background-color: #f1f1f1;
   background-size: auto 320px;
   border-top: $border;
@@ -8,6 +8,7 @@
 }
 
 .banner--toys {
+  background-color: #fafafa;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-size: auto 375px;
   background-position: -120px 0;
@@ -16,9 +17,8 @@
 
 .banner__title {
   @include font-set(27px, 1.11);
-  width: 260px;
-  margin-top: 70px;
+  margin: 70px 0;
+  padding: 0 30px;
   text-align: center;
-  padding: 0 30px 85px 21px;
   color: $black;
 }

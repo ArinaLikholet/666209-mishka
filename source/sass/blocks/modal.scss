@@ -61,11 +61,3 @@
 .modal__input:checked + .modal__label {
   border-color: $color-form;
 }
-
-.button--green {
-  width: 260px;
-  margin: 30px auto 0;
-  color: $white;
-  background-color: $mint;
-  border: none;
-}

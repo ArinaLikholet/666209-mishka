@@ -1,0 +1,15 @@
+.copyright {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.copyright__text {
+  @include font-set(19px, 20px);
+  margin-right: 30px;
+  margin-left: 15px;
+  color: $black;
+}
+
+.copyright__icon {
+  fill: $mint;
+}

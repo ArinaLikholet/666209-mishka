@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Форма заказа</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+
   <header class="main-header">
     <nav class="main-nav">
 
-      <div class="main-nav__wrapper">
+      <div class="main-nav__logo-wrapper">
 
         <button class="main-nav__toggle" type="button" title="Меню">
           <span class="visually-hidden">Кнопка меню</span>
@@ -47,12 +50,13 @@
       <h1 class="banner__title">Вязание&nbspна&nbspзаказ</h1>
     </section>
 
-    <p class="form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+      свяжемся с вами, чтобы уточнить детали.</p>
 
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
       <h2 class="form__header visually-hidden">Сортировка</h2>
 
-      <fieldset class="order-wrapper">
+      <fieldset class="form__order-wrapper">
         <h3 class="form__legend">Тип</h3>
 
         <div class="form__inner">
@@ -66,7 +70,7 @@
         </div>
 
       </fieldset>
-      <fieldset class="order-wrapper">
+      <fieldset class="form__order-wrapper">
         <h3 class="form__legend">Цвет</h3>
 
         <div class="form__inner">
@@ -85,22 +89,22 @@
         </div>
 
         <div class="form__inner">
-          <input class="form__checkbox-input" type="checkbox" id="black" name="white" >
+          <input class="form__checkbox-input" type="checkbox" id="black" name="white">
           <label for="black" class="form__checkbox-label">Черный</label>
         </div>
 
         <div class="form__inner">
-          <input class="form__checkbox-input" type="checkbox" id="pink" name="white" >
+          <input class="form__checkbox-input" type="checkbox" id="pink" name="white">
           <label for="pink" class="form__checkbox-label">Розовый</label>
         </div>
 
         <div class="form__inner">
-          <input class="form__checkbox-input" type="checkbox" id="orange" name="white" >
+          <input class="form__checkbox-input" type="checkbox" id="orange" name="white">
           <label for="orange" class="form__checkbox-label">Оранжевый</label>
         </div>
       </fieldset>
 
-      <fieldset class="order-wrapper">
+      <fieldset class="form__order-wrapper">
         <h3 class="form__legend">ФИО</h3>
 
         <div class="form__inner">
@@ -179,6 +183,6 @@
       </div>
     </div>
   </footer>
-
+</div>
 </body>
 </html>
