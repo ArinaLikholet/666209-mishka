@@ -1,0 +1,51 @@
+.main-nav {
+  @include indents(0 auto);
+  min-height: 79px;
+  background-color: $white;
+}
+
+.main-nav__logo-wrapper {
+  margin: 0 -30px;
+}
+
+.main-nav__list {
+  @include indents(0 -30px, 0);
+  list-style: none;
+}
+
+.main-nav__item {
+  @include indents(0, 0);
+  min-width: 260px;
+  border-bottom: $border;
+  background-color: $white;
+}
+
+.main-nav__link {
+  @include indents(0, 27px 0);
+  padding-left: 45px;
+
+  @include font-set($font-size, 1.4);
+  color: $black;
+  text-decoration: none;
+  display: block;
+}
+
+.main-nav__link--logo {
+  @include indents(0 auto);
+  padding: 22px 0 15px;
+  text-align: center;
+  border-bottom: $border;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}

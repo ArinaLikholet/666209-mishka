@@ -1,0 +1,27 @@
+.product-card__subtitle {
+  @include caps(700, 17px, 1.18);
+  @include indents();
+  color: $mint;
+}
+
+.product-card__description {
+  @include indents();
+  @include font(15px, 24px);
+  padding-top: 25px;
+}
+
+.product-card__price {
+  @include font-set(17px, 24px);
+  text-align: center;
+}
+
+.product-card__image {
+  background-color: #f1f1f1;
+  background-size: auto 260px;
+  background-repeat: no-repeat;
+  min-height: 315px;
+}
+
+.product-card__button {
+  margin-top: 28px;
+}

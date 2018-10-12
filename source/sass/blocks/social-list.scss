@@ -1,0 +1,13 @@
+.social-list {
+  @include indents();
+  list-style: none;
+  padding: 30px 30px;
+}
+
+.social-list__link,
+.copyright__link {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0;
+}

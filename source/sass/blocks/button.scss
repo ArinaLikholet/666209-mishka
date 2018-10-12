@@ -1,0 +1,29 @@
+.button {
+  @include caps(700,17px,20px);
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 0;
+  color: $font-gray;
+  border: 2px solid $font-gray;
+  display: block;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: $white;
+  background-color: #464646;
+}
+
+.button:active {
+  color: rgba($white, 0.3);
+  background-color: #464646;
+}
+
+.button--green {
+  width: 260px;
+  margin: 30px auto 0;
+  color: $white;
+  background-color: $mint;
+  border: none;
+}
