@@ -3,7 +3,7 @@
   line-height: 24px;
   margin: 23px 30px;
   padding: 0;
-  color: $font-gray;
+  color: $gray;
 }
 
 .form__order-wrapper {
@@ -64,7 +64,7 @@
     left: 0;
     width: 38px;
     height: 38px;
-    border: 2px solid $font-gray;
+    border: 2px solid $gray;
     border-radius: 50%;
   }
 
@@ -75,7 +75,7 @@
     left: 12px;
     width: 18px;
     height: 18px;
-    background-color: $color-form;
+    background-color: $mint_2;
     border-radius: 50%;
     display: none;
   }
@@ -97,7 +97,7 @@
     left: 0;
     width: 38px;
     height: 38px;
-    border: 2px solid $font-gray;
+    border: 2px solid $gray;
   }
 
   &::after {
@@ -119,12 +119,12 @@
 .form__radio-input:focus + .form__radio-label::before,
 .form__checkbox-input:hover + .form__checkbox-label::before,
 .form__checkbox-input:focus + .form__checkbox-label::before {
-  border-color: $color-form;
+  border-color: $mint_2;
 }
 
 .form__radio-input:active + .form__radio-label::before,
 .form__checkbox-input:active + .form__checkbox-label::before {
-  border-color: $font-gray;
+  border-color: $gray;
   opacity: 0.3;
 }
 
@@ -140,7 +140,7 @@
   @include font(17px, 18px);
   width: 99%;
   font-family: $font-family;
-  color: $font-gray;
+  color: $gray;
   border: none;
   box-shadow: inset 0 -2px 0 $black;
   padding: 10px 0;
@@ -149,7 +149,7 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: inset 0 -2px 0 $color-form;
+    box-shadow: inset 0 -2px 0 $mint_2;
   }
 }
 // стили для сообщений
@@ -160,20 +160,20 @@
 
   @include font($font-size, 18px);
   font-family: $font-family;
-  color: $font-gray;
-  border: 2px solid $font-gray;
+  color: $gray;
+  border: 2px solid $gray;
   outline: none;
 
   &:hover,
   &:focus,
   &:active {
-    border-color: $color-form;
+    border-color: $mint_2;
   }
 }
 
 .form__caption {
   @include font(14px, 16px);
-  color: $font-gray;
+  color: $gray;
 }
 
 .form__button {

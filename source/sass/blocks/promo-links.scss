@@ -5,7 +5,7 @@
 }
 
 .promo-links__item {
-  background-color: $mint;
+  background-color: $mint_1;
   padding: 25px 0 30px 35px;
 }
 
@@ -15,6 +15,7 @@
 
 .promo-links__link {
   @include font-set(19px, 24px);
+  padding-left: 30px;
   text-decoration: none;
   display: block;
   color: $white;

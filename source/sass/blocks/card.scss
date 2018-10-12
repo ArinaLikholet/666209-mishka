@@ -1,3 +1,9 @@
+.card__wrapper {
+  margin: 0 auto;
+  max-width: 771px;
+  padding: 0 30px;
+}
+
 .card {
   margin-bottom: 35px;
   outline: 0;
@@ -22,12 +28,12 @@
   border: 1px solid #ececec;
 }
 
-.card:hover > .card-info,
-.card:focus > .card-info {
+.card:hover > .card__info,
+.card:focus > .card__info {
   box-shadow: 0 6px 10px rgba($black, 0.1);
 }
 
-.card:active > .card-info {
+.card:active > .card__info {
   box-shadow: 0 3px 5px rgba($black, 0.1);
 }
 
@@ -57,7 +63,7 @@
 .card__text {
   @include indents(0, 10px 30px 10px 30px);
   @include font(13px, 1.4);
-  color: $font-gray;
+  color: $gray;
 }
 
 .card__price {
@@ -78,11 +84,11 @@
 
 .card__button:hover .icon--catalog-cart,
 .card__button:focus .icon--catalog-cart {
-  fill: $mint;
+  fill: $mint_1;
   opacity: 1;
 }
 
 .card__button:active .icon--catalog-cart {
-  fill: $mint;
+  fill: $mint_1;
   opacity: 0.3;
 }

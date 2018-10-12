@@ -1,6 +1,7 @@
 .about-us {
-  @include indents(0 auto, 0);
-  position: relative;
+  margin: 0 auto;
+  max-width: 771px;
+  padding: 0 30px;
 }
 
 .about-us__title {

@@ -1,6 +1,7 @@
 .reviews {
-  @include indents();
-  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 771px;
+  padding: 0 30px;
 }
 
 .reviews__slider {

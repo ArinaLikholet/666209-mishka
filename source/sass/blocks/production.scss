@@ -1,6 +1,11 @@
 
 .production {
-  margin-bottom: 60px;
+  margin: 0 auto;
+  max-width: 771px;
+  padding: 0 30px;
+}
+
+.production__wrapper {
   outline: none;
   border: $border;
 }
@@ -17,6 +22,7 @@
 .production__player {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .production__title {
@@ -66,6 +72,6 @@
 .production__text {
   @include indents;
   @include font(13px, 24px);
-  color: $font-gray;
+  color: $gray;
   margin-bottom: 24px;
 }

@@ -28,7 +28,7 @@
 .modal__caption {
   @include indents(0, 18px 0 20px);
   @include font(15px, 30px);
-  color: $font-gray;
+  color: $gray;
   text-align: center;
 }
 
@@ -44,20 +44,20 @@
 .modal__label {
   @include caps(700, 17px, 48px);
   font-family: $font-family;
-  color: $font-gray;
+  color: $gray;
   width: 78px;
   height: 48px;
   text-align: center;
   background-color: $white;
-  border: 2px solid rgba($font-gray, 0.1);
+  border: 2px solid rgba($gray, 0.1);
   cursor: pointer;
 }
 
 .modal__input:hover + .modal__label,
 .modal__input:focus + .modal__label {
-  border-color: rgba($font-gray, 0.3);
+  border-color: rgba($gray, 0.3);
 }
 
 .modal__input:checked + .modal__label {
-  border-color: $color-form;
+  border-color: $mint_2;
 }

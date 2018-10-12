@@ -1,7 +1,13 @@
+.product-card {
+  margin: 0 auto;
+  max-width: 771px;
+  padding: 0 30px;
+}
+
 .product-card__subtitle {
   @include caps(700, 17px, 1.18);
   @include indents();
-  color: $mint;
+  color: $mint_1;
 }
 
 .product-card__description {
