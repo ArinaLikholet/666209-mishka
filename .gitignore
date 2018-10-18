@@ -10,5 +10,6 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/preview
+source/pixel-glass
 Thumbs.db
 preview/

@@ -131,7 +131,7 @@
 // стили для формы ФИО
 
 .form__text-label {
-  @include font-set($font-size, 18px);
+  @include font-bold($font-size, 18px);
   color: $black;
   padding-top: 20px;
 }

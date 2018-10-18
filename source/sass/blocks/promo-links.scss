@@ -7,18 +7,53 @@
 .promo-links__item {
   background-color: $mint_1;
   padding: 25px 0 30px 35px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    padding-bottom: 33px;
+    margin-top: -5px;
+    background-color: #59d5bc;
+  }
 }
 
 .promo-links__item--dark {
   background-color: #56c3b2;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #46c1ae;
+  }
 }
 
 .promo-links__link {
-  @include font-set(19px, 24px);
+  @include font-bold(19px, 24px);
   padding-left: 30px;
   text-decoration: none;
   display: block;
   color: $white;
   width: 130px;
   background-color: transparent;
+}
+
+.promo-links__item:hover {
+  height: calc(100% + 5px);
+}
+
+@media (min-width: $tablet) {
+  .promo-links__wrapper {
+    margin: 0 50px;
+    padding-top: 90px;
+  }
+
+  .promo-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo-links__item {
+    width: 50%;
+  }
 }

@@ -27,7 +27,7 @@
 
 .production__title {
   @include indents;
-  @include font-set($font-size, 1.4);
+  @include font-bold($font-size, 1.4);
   color: $black;
   width: 140px;
   padding: 10px 10px 20px 90px;

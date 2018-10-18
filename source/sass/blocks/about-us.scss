@@ -5,7 +5,7 @@
 }
 
 .about-us__title {
-  @include font-set(25px, 30px);
+  @include font-bold(25px, 30px);
   padding-top: 35px;
   margin: 0 0 35px;
   color: $black;
@@ -23,4 +23,59 @@
   font-weight: 700;
   color: $black;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .about-us {
+    padding: 0 50px 80px 50px;
+  }
+
+  .about-us__title {
+    @include font-bold(43px, 50px);
+    padding-top: 45px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-us__item {
+    @include font-bold(20px, 22px);
+    width: 40%;
+  }
+
+  .about-us__item--wool {
+    order: 2;
+  }
+
+  .about-us__item--money {
+    order: 3;
+  }
+
+  .about-us__item--rocket {
+    order: 4;
+  }
+
+  .about-us__item--heart {
+    order: 5;
+  }
+
+  .about-us__item--gift {
+    order: 6;
+  }
+
+  .about-us__item--flower,
+  .about-us__item--wool {
+    padding: 66px 45px 27px 5px;
+  }
+
+  .about-us__item--money,
+  .about-us__item--heart,
+  .about-us__item--rocket,
+  .about-us__item--gift {
+    padding: 85px 45px 27px 5px;
+  }
 }

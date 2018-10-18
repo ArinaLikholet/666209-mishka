@@ -2,6 +2,7 @@
   @include indents(0 auto);
   min-height: 79px;
   background-color: $white;
+  position: relative;
 }
 
 .main-nav__logo-wrapper {
@@ -15,16 +16,14 @@
 
 .main-nav__item {
   @include indents(0, 0);
-  min-width: 260px;
   border-bottom: $border;
   background-color: $white;
 }
 
 .main-nav__link {
   @include indents(0, 27px 0);
+  @include font-bold($font-size, 1.4);
   padding-left: 45px;
-
-  @include font-set($font-size, 1.4);
   color: $black;
   text-decoration: none;
   display: block;
@@ -48,4 +47,88 @@
   background-color: transparent;
   cursor: pointer;
   border: 0;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    margin: 0 50px;
+  }
+
+  .main-nav__list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .main-nav__item {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .main-nav__item--logo {
+    flex-grow: 1;
+    width: 30%;
+    margin-right: auto;
+  }
+
+  .main-nav__link--logo {
+    margin: 0;
+    text-align: left;
+    border: none;
+    padding-left: 0;
+  }
+
+  .main-nav__item--catalog,
+  .main-nav__item--form {
+    width: 25%;
+    text-align: left;
+  }
+
+  .main-nav__item--catalog {
+    order: 4;
+  }
+
+  .main-nav__item--form {
+    order: 5;
+  }
+
+  .main-nav__link--catalog,
+  .main-nav__link--form {
+    @include font-bold(15px, 24px);
+    padding: 20px 0;
+  }
+
+  .main-nav__item--search {
+    width: 50px;
+    padding-left: 30px;
+    border-left: $border;
+    border-right: $border;
+  }
+
+  .main-nav__link--search {
+    padding: 35px 0;
+    font-size: 0;
+  }
+
+  .main-nav__item--cart {
+    flex-shrink: 0;
+    width: 40%;
+    text-align: right;
+  }
+
+  .main-nav__link--cart {
+    padding: 32px 0;
+  }
+
+  .main-nav__item--extra {
+    display: none;
+  }
 }

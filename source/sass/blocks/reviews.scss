@@ -11,6 +11,55 @@
 
 .reviews__title {
   @include indents(0, 0);
-  @include font-set(25px, 30px);
+  @include font-bold(25px, 30px);
   color: $black;
+}
+
+@media (min-width: $tablet) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 52px 50px 60px;
+  }
+
+  .reviews__title {
+    @include font-bold(43px, 50px);
+    order: -1;
+  }
+
+  .reviews__slider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 22px;
+  }
+
+  .slider__text {
+    @include font($font-size, 30);
+  }
+
+  .slider__author {
+    display: block;
+    margin-top: 88px;
+  }
+
+  .slider__author-name {
+    display: block;
+  }
+
+  .slider__nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .slider__button {
+    min-width: 50px;
+  }
+
+  .reviews__button {
+    order: -1;
+    align-self: baseline;
+    margin-left: auto;
+    width: 175px;
+  }
 }

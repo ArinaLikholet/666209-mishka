@@ -5,9 +5,11 @@
   background-size: auto 320px;
   border-top: $border;
   background-repeat: no-repeat;
+  position: relative;
+  top: -65px;
 }
 
-.banner--toys {
+.banner__toys {
   background-color: #fafafa;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-size: auto 375px;
@@ -16,8 +18,31 @@
 }
 
 .banner__title {
-  @include font-set(27px, 1.11);
+  @include font-bold(27px, 1.11);
   @include indents(0 auto, 70px 0);
   text-align: center;
   color: $black;
+}
+
+.banner__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .banner__delivery {
+    @include font(15px, 24px);
+    display: block;
+    text-align: right;
+    margin-right: 105px;
+  }
+
+  .banner h1 {
+    @include font-bold(43px, 1.16);
+    margin: 0 50px;
+    padding-top: 100px;
+  }
+
+  .banner__toys {
+    margin-right: -50px;
+  }
 }

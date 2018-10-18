@@ -45,7 +45,13 @@ body {
 // блоки без БЭМ элементов
 
 .page-subtitle {
-  @include font-set(25px, 1.2);
+  @include font-bold(25px, 1.2);
   @include indents();
   padding-top: 30px;
+}
+
+@media (min-width: $tablet) {
+  .page-subtitle {
+    @include font-bold(43px, 50px);
+  }
 }

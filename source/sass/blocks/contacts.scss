@@ -6,7 +6,7 @@
 
 .contacts__title {
   @include indents();
-  @include font-set(18px, 1.67);
+  @include font-bold(18px, 1.67);
   padding: 87px 0 30px;
 }
 
@@ -64,4 +64,27 @@
 
 .contacts__button {
   margin: 50px 35px 20px 35px;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    @include font-bold(43px, 50px);
+    padding-top: 100px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+  }
+
+  .contacts__inner {
+    @include font($font-size, 30px);
+  }
+
+  .mail-link {
+    height: 30px;
+  }
 }
