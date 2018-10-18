@@ -3,3 +3,10 @@
   max-width: 771px;
   padding: 0 30px;
 }
+
+@media (min-width: $tablet) {
+  .main-footer__wrap {
+    display: flex;
+    background-color: $color-bg;
+  }
+}
