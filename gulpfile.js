@@ -14,7 +14,8 @@ var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
-var run = require("run-sequence");
+var PatternSvg = "{icon-*,logo-htmlacademy,logo-footer}";
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -33,7 +34,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/"+PatternSvg+".svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -77,23 +78,36 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
-});
-
-gulp.task("serve", function() {
+gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
-    open: true,
+    online: false,
+    open: false,
     cors: true,
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/"+PatternSvg+".svg", gulp.series("sprite", "html", "reload"));
+  gulp.watch("source/*.html", gulp.series("html", "reload"));
 });
 
-gulp.task("build", function (done) {
-  run("clean", "copy", "css", "sprite", "html", "images", "webp", done);
+gulp.task("reload", function (done) {
+  server.reload();
+  done();
 });
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("build", gulp.series (
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html",
+  "images",
+  "webp"
+));
