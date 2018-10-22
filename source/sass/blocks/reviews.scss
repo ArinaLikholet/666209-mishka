@@ -34,12 +34,12 @@
   }
 
   .slider__text {
-    @include font($font-size, 30);
+    @include font($font-size, 2);
   }
 
   .slider__author {
     display: block;
-    margin-top: 88px;
+    margin-top: 45px;
   }
 
   .slider__author-name {

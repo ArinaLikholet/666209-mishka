@@ -84,12 +84,12 @@
     @include font($font-size, 30px);
   }
 
-  .mail-link {
-    height: 30px;
-  }
-  
   .contacts__map {
     margin: 0 -50px;
+  }
+
+  .mail-link {
+    height: 30px;
   }
 
   .contacts__map iframe {
@@ -99,5 +99,13 @@
   .contacts__button {
     width: 34%;
     margin: 50px 35px 20px 220px;
+  }
+
+  .contacts__label {
+    @include font($font-size, 30px);
+  }
+
+  .contacts__link {
+    @include font($font-size, 30px);
   }
 }

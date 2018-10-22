@@ -36,13 +36,26 @@
     margin-right: 105px;
   }
 
-  .banner h1 {
+  .banner__title {
     @include font-bold(43px, 1.16);
     margin: 0 50px;
     padding-top: 100px;
+    width: 75%;
   }
 
   .banner__toys {
     margin-right: -50px;
   }
 }
+
+@media (min-width: $descktop) {
+  .banner {
+    margin: 0 auto;
+  }
+
+  .banner__title {
+    @include font-bold(53px, 57px);
+    margin: 0 100px;
+  }
+}
+

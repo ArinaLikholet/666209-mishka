@@ -131,11 +131,29 @@
   .main-nav__item--extra {
     display: none;
   }
+
+  .main-nav__item--sale {
+    display: none;
+  }
 }
 
 @media (min-width: $descktop) {
+  .main-nav__wrapper {
+    margin: 0 100px;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+  }
+
   .main-nav__item {
     width: 21%;
+  }
+
+  .main-nav__link {
+    @include font($font-size, 24px);
+    padding-left: 0;
   }
 
   .main-nav__item--catalog {
@@ -155,6 +173,10 @@
     width: 10%;
   }
 
+  .main-nav__link--search {
+    font-size: 0;
+  }
+
   .main-nav__item--cart {
     order: 5;
   }
@@ -162,5 +184,15 @@
   .main-nav__item--extra {
     display: block;
     order: 6;
+  }
+
+  .main-nav__item--sale {
+    display: block;
+    order: 7;
+  }
+
+  .main-nav__link--extra,
+  .main-nav__link--sale {
+    @include font(15px, 24px);
   }
 }
