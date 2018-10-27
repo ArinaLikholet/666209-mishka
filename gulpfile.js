@@ -71,7 +71,9 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/**",
+    "source/pixel-glass/**/*",
+    "source/preview/**/*"
   ], {
     base: "source"
   })
@@ -82,7 +84,7 @@ gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
-    online: false,
+    online: true,
     open: false,
     cors: true,
     ui: false

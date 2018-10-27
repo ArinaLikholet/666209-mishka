@@ -5,14 +5,25 @@
   height: 120px;
   margin-bottom: 28px;
   border-collapse: collapse;
-  margin-top: 18px;
+}
+
+.good-characteristic__col {
+  width: 96px;
 }
 
 .good-characteristic__row {
   border-bottom: $border;
 }
 
-.good-characteristic__col {
-  width: 70px;
-  margin-right: 10px;
+@media (min-width: $tablet) {
+  .good-characteristic {
+    width: 292px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $descktop) {
+  .good-characteristic {
+    margin-bottom: 110px;
+  }
 }

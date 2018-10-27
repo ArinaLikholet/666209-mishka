@@ -1,61 +1,122 @@
 .banner {
-  margin: 0 -30px 30px -30px;
-  padding-bottom: 70px;
-  background-color: #f1f1f1;
-  background-size: auto 320px;
+  width: 100%;
+  min-height: 176px;
   border-top: $border;
-  background-repeat: no-repeat;
-  position: relative;
-  top: -65px;
+  background-color: $color-bg;
 }
 
 .banner__toys {
-  background-color: #fafafa;
-  background-image: url("../../img/hero-mobile@1x.jpg");
-  background-size: auto 375px;
-  background-position: center 0;
-  min-height: 375px;
-}
+  min-height: 355px;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -17px;
 
-.banner__title {
-  @include font-bold(27px, 1.11);
-  @include indents(0 auto, 70px 0);
-  text-align: center;
-  color: $black;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 372px;
+  }
 }
 
 .banner__delivery {
   display: none;
 }
 
+.banner__title {
+  @include font-bold(27px, 30px);
+  color: $black;
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.banner__toys .banner__title {
+  width: 245px;
+  margin-top: 71px;
+}
+
+// Планшет
+
 @media (min-width: $tablet) {
-  .banner__delivery {
-    @include font(15px, 24px);
-    display: block;
-    text-align: right;
-    margin-right: 105px;
+  .banner {
+    position: relative;
+    min-height: 225px;
+    margin-top: -64px;
   }
 
-  .banner__title {
-    @include font-bold(43px, 1.16);
-    margin: 0 50px;
-    padding-top: 100px;
-    width: 75%;
+  .banner::after {
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    z-index: 10;
+    width: 100%;
+    height: 34px;
+    content: "";
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
   }
 
   .banner__toys {
-    margin-right: -50px;
+    min-height: 745px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  .banner__delivery {
+    @include font(15px, 24px);
+    color: $gray;
+    text-align: right;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 18px 50px 20px 350px;
+  }
+
+  .banner__title {
+    @include font-bold(43px, 50px);
+    margin-top: 34px;
+  }
+
+  .banner__toys .banner__title {
+    width: 500px;
+    margin-top: 91px;
   }
 }
 
+// Десктоп
+
 @media (min-width: $descktop) {
   .banner {
-    margin: 0 auto;
+    min-height: 254px;
+  }
+
+  .banner__toys {
+    min-height: 745px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .banner__title {
     @include font-bold(53px, 57px);
-    margin: 0 100px;
+  }
+
+  .banner__toys .banner__title {
+    width: 615px;
+  }
+
+  .banner__delivery {
+    max-width: 700px;
+    padding-right: 0;
   }
 }
-

@@ -1,22 +1,21 @@
 .card__wrapper {
   margin: 0 auto;
-  max-width: 771px;
-  padding: 0 30px;
+  padding: 30px 30px 0;
 }
 
 .card {
-  margin-bottom: 35px;
-  outline: 0;
+  margin-bottom: 30px;
+  outline: none;
 }
 
 .card__img-link {
   display: block;
   min-height: 195px;
-  margin: 0;
-  padding: 0;
+
+  @include indents;
 }
 
-.card__image {
+.card__img-link img {
   display: block;
   max-width: 100%;
   width: 100%;
@@ -24,8 +23,8 @@
 }
 
 .card__info {
-  padding: 15px 30px 0 23px;
-  border: 1px solid #ececec;
+  padding: 28px;
+  border: $border;
 }
 
 .card:hover > .card__info,
@@ -37,41 +36,39 @@
   box-shadow: 0 3px 5px rgba($black, 0.1);
 }
 
-.card__description {
-  @include indents();
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .card__description a {
-  @include indents();
-  text-decoration: none;
-
-  @include font-bold(17px, 1.4);
+  @include indents;
+  @include font-bold($font-size, 1.4);
   color: $black;
+  text-decoration: none;
 }
 
-.card__description a:hover,
-.card__description a:focus {
+.card__description:hover,
+.card__description:focus {
   opacity: 0.6;
 }
 
-.card__description a:active {
+.card__description:active {
   opacity: 0.3;
 }
 
 .card__text {
-  @include indents(0, 10px 30px 10px 30px);
+  @include indents(0, 10px 0 25px);
   @include font(13px, 1.4);
   color: $gray;
+}
+
+.card__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  border-top: $border;
 }
 
 .card__price {
   @include font-bold(15px, 24px);
   color: $black;
-  border-top: $border;
-  padding: 20px 30px 0 30px;
-  margin-bottom: 0;
 }
 
 .card__button {
@@ -82,13 +79,103 @@
   cursor: pointer;
 }
 
-.card__button:hover .icon--catalog-cart,
-.card__button:focus .icon--catalog-cart {
+.card__button:hover .icon--card-cart,
+.card__button:focus .icon--card-cart {
   fill: $mint_1;
   opacity: 1;
 }
 
-.card__button:active .icon--catalog-cart {
+.card__button:active .icon--card-cart {
   fill: $mint_1;
   opacity: 0.3;
+}
+
+.card__icon-cart {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.2;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .card__wrapper {
+    padding: 78px 50px 0;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+  }
+
+  .card__img-link {
+    width: 50%;
+    min-height: 334px;
+    background-color: #ececec;
+  }
+
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 26px 28px;
+    box-sizing: border-box;
+  }
+
+  .card__description {
+    @include font-bold(20px, 24px);
+  }
+
+  .card__text {
+    @include font(15px, 2);
+    padding: 5px 0 13px;
+  }
+
+  .card__order {
+    padding-top: 22px;
+  }
+
+  .card__price {
+    @include font-bold($font-size, 1.4);
+  }
+
+  .card__button {
+    width: 25px;
+    height: 24px;
+  }
+}
+
+//Десктоп
+
+@media (min-width: $descktop) {
+  .card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1050px;
+    padding-top: 128px;
+  }
+
+  .card {
+    @include indents;
+    margin-bottom: 58px;
+    flex-direction: column;
+  }
+
+  .card:not(:nth-of-type(3n)) {
+    margin-right: 50px;
+  }
+
+  .card__img-link {
+    width: 100%;
+    min-height: 462px;
+    background-color: #ececec;
+  }
+
+  .card__info {
+    flex-grow: 1;
+    width: 316px;
+  }
 }
