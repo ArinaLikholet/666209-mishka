@@ -1,15 +1,48 @@
 .copyright {
-  padding: 15px 0;
+  padding: 23px 0;
   text-align: center;
 }
 
 .copyright__text {
-  @include font-set(19px, 20px);
-  margin-right: 30px;
-  margin-left: 15px;
+  @include font-bold(19px, 20px);
   color: $black;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.copyright__icon:hover,
+.copyright__icon:focus {
+  fill: $mint_3;
+}
+
+.copyright__icon:active {
+  fill: $mint_3;
+  opacity: 0.3;
 }
 
 .copyright__icon {
-  fill: $mint;
+  fill: $mint_1;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .copyright {
+    text-align: right;
+  }
+
+  .copyright__text {
+    margin-right: 24px;
+  }
+
+  .copyright__link {
+    padding-top: 5px;
+  }
 }

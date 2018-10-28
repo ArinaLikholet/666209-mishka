@@ -1,23 +1,101 @@
 .promo-links {
+  margin: -71px auto 0;
+}
+
+.promo-links__list {
+  @include indents;
   list-style: none;
-  margin: -110px -30px 0 -30px;
-  padding: 0;
 }
 
 .promo-links__item {
-  background-color: $mint;
-  padding: 25px 0 30px 35px;
-}
-
-.promo-links__item--dark {
-  background-color: #56c3b2;
+  @include indents;
 }
 
 .promo-links__link {
-  @include font-set(19px, 24px);
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 30px 18px;
   text-decoration: none;
+  background-color: $mint_1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    padding-bottom: 33px;
+    margin-top: -5px;
+    background-color: #59d5bc;
+  }
+}
+
+.promo-links__link--toys {
+  background-color: #56c3b2;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #46c1ae;
+  }
+}
+
+.promo-links__title {
+  @include font-bold(19px, 24px);
   display: block;
-  color: $white;
   width: 130px;
+  color: $white;
   background-color: transparent;
+}
+
+.promo-links__link:active .promo-links__title {
+  opacity: 0.3;
+}
+
+.promo-links__icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.promo-links__link:hover .promo-links__icon,
+.promo-links__link:focus .promo-links__icon {
+  opacity: 0.7;
+}
+
+.promo-links__link:active .promo-links__icon {
+  opacity: 0.3;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .promo-links {
+    position: relative;
+    z-index: 2;
+    margin-top: -118px;
+  }
+
+  .promo-links__list {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  .promo-links__item {
+    width: 50%;
+  }
+
+  .promo-links__link {
+    padding: 28px 35px;
+  }
+
+  .promo-links__name {
+    @include font-bold(20px, 30px);
+  }
+}
+
+// Десктоп
+
+@media (min-width: $descktop) {
+  .promo-links {
+    max-width: 1150px;
+  }
 }

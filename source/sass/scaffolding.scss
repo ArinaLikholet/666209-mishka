@@ -2,7 +2,7 @@
   font-weight: normal;
   font-family: "Open Sans";
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
@@ -10,7 +10,7 @@
   font-weight: bold;
   font-family: "Open Sans";
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
@@ -20,13 +20,17 @@ body {
 }
 
 body {
+  @include indents(0 auto, 0);
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  word-wrap: break-word;
   font-family: $font-family;
   font-size: $font-size;
   line-height: 1.4;
-  color: $font-gray;
+  color: $gray;
   background-color: $white;
   outline: none;
-  word-wrap: break-word;
 }
 
 .visually-hidden {
@@ -42,14 +46,49 @@ body {
   overflow: hidden;
 }
 
-// блоки без БЭМ элементов
-.main-footer__wrap {
-  @include indents(0 auto, 0);
-  min-width: 260px;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($white, 0.9);
+  z-index: 6;
 }
 
-.page-subtitle {
-  @include font-set(25px, 1.2);
-  @include indents();
-  padding-top: 30px;
+.overlay--show {
+  display: block;
+}
+
+// Блоки без элементов по БЭМ
+
+.page-main {
+  width: 100%;
+}
+
+.main-header {
+  width: 100%;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .promo-text {
+    @include indents(72px 50px 10px, 0);
+    @include font($font-size, 30px);
+  }
+}
+
+// Десктоп
+
+@media (min-width: $descktop) {
+  .promo-text {
+    max-width: 675px;
+    margin: 122px auto 10px;
+    padding-left: 175px;
+    padding-right: 200px;
+  }
 }

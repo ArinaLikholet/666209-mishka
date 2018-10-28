@@ -3,7 +3,7 @@
   line-height: $line-height;
 }
 
-@mixin font-set($size, $line-height) {
+@mixin font-bold($size, $line-height) {
   font-size: $size;
   line-height: $line-height;
   font-weight: 700;

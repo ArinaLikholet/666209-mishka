@@ -1,0 +1,65 @@
+.main-footer {
+  width: 100%;
+  background-color: $color-bg;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+.main-footer__wrapper {
+  @include indents(0, 0 30px);
+}
+
+.main-footer__copyright {
+  background-color: $color-bg;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+  }
+
+  .main-footer__logo {
+    display: block;
+    width: 33%;
+    margin-top: -5px;
+    font-size: 0;
+  }
+
+  .main-footer__logo--svg {
+    fill: $black;
+  }
+
+  .main-footer__logo--svg:hover,
+  .main-footer__logo--svg:focus {
+    fill: $mint_3;
+  }
+
+  .main-footer__logo--svg:active {
+    fill: $mint_3;
+    opacity: 0.3;
+  }
+
+  //.social__list {
+  //  width: 33%;
+  //}
+
+  .main-footer-footer__copyright {
+    width: 33%;
+  }
+}
+//Десктоп
+
+@media (min-width: $descktop) {
+  .main-footer__wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 28px 50px;
+  }
+}
