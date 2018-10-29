@@ -1,6 +1,6 @@
 .reviews {
-  max-width: 771px;
   position: relative;
+  padding-bottom: 19px;
 }
 
 .reviews::after {
@@ -27,6 +27,7 @@
   @include indents(0, 0);
   @include font-bold(25px, 30px);
   color: $black;
+  padding-top: 25px;
 }
 
 @media (min-width: $tablet) {
@@ -52,7 +53,7 @@
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 68px 50px 60px;
+    padding: 68px 50px 95px;
   }
 
   .reviews__wrapper::after {
@@ -63,6 +64,7 @@
   .reviews__title {
     @include font-bold(43px, 50px);
     order: -1;
+    margin-top: 16px;
   }
 
   .reviews__slider {
@@ -76,6 +78,7 @@
     align-self: baseline;
     margin-left: auto;
     width: 175px;
+    margin-top: 40px;
   }
 }
 
@@ -86,7 +89,7 @@
   }
 
   .reviews__wrapper {
-    margin: 35px 50px 0;
+    margin: 13px 50px 0;
     padding: 72px 0 188px 174px;
   }
 

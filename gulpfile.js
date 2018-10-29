@@ -14,6 +14,7 @@ var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
+var uglify = require ("gulp-uglify")
 var PatternSvg = "{icon-*,logo-htmlacademy,logo-footer}";
 
 
@@ -67,6 +68,16 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img/webp"));
 });
 
+gulp.task("js", function() {
+  return gulp.src(["source/js/script.js", "source/js/svg4everybody.js"])
+    .pipe(plumber())
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/js"));
+});
+
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -111,5 +122,6 @@ gulp.task("build", gulp.series (
   "sprite",
   "html",
   "images",
-  "webp"
+  "webp",
+  "js"
 ));

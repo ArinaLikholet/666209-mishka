@@ -38,7 +38,7 @@
 
 .card__description a {
   @include indents;
-  @include font-bold($font-size, 1.4);
+  @include font-bold(20px, 24px);
   color: $black;
   text-decoration: none;
 }
@@ -160,7 +160,7 @@
 
   .card {
     @include indents;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
     flex-direction: column;
   }
 
@@ -177,5 +177,10 @@
   .card__info {
     flex-grow: 1;
     width: 316px;
+    padding-top: 8px;
+  }
+
+  .card__text {
+    padding: 0 0 10px;
   }
 }

@@ -11,7 +11,7 @@
 
 .form__wrap {
   @include indents(0, 0 30px);
-  padding-bottom: 32px;
+  padding-bottom: 19px;
 }
 
 .form__title {
@@ -35,7 +35,7 @@
 }
 
 .form__inner {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .form__wrap--color {
@@ -47,12 +47,12 @@
 }
 
 .form__input-radio,
-.form__input-check {
+.form__input-checkbox {
   display: none;
 }
 
 .form__label-radio,
-.form__label-check {
+.form__label-checkbox {
   @include font-bold($font-size, 18px);
   position: relative;
   display: block;
@@ -91,7 +91,7 @@
   display: block;
 }
 
-.form__label-check {
+.form__label-checkbox {
   padding-bottom: 12px;
 
   &::before {
@@ -175,7 +175,7 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: inset 0 -2px 0 $color-bg;
+    box-shadow: inset 0 -2px 0 $mint_2;
   }
 
   &::-webkit-input-placeholder {
@@ -214,7 +214,7 @@
   opacity: 1;
 }
 
-.form__wrap--messege {
+.form__wrap--message {
   padding-bottom: 0;
 }
 
@@ -231,7 +231,7 @@
   &:hover,
   &:focus,
   &:active {
-    border-color: $color-bg;
+    border-color: $mint_2;
   }
 
   &::-webkit-input-placeholder {
@@ -288,6 +288,12 @@
 // Планшет
 
 @media (min-width: $tablet) {
+  .form-description {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 67px 50px 20px;
+  }
+
   .form__order-wrapper:nth-of-type(even) {
     background-color: $color-bg;
   }
@@ -309,7 +315,7 @@
   }
 
   .form__inner {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   .form__wrap--color .form__inner {
@@ -402,12 +408,12 @@
     background-color: $color-bg;
   }
 
-  .form__wrap--messege {
+  .form__wrap--message {
     padding-top: 50px;
   }
 
   .form__wrap--contact .form__title,
-  .form__wrap--messege .form__title {
+  .form__wrap--message .form__title {
     width: 25%;
   }
 
@@ -447,6 +453,11 @@
 // Десктоп
 
 @media (min-width: $descktop) {
+  .form-description {
+    width: 680px;
+    margin: 133px auto 0;
+  }
+
   .form__wrap {
     max-width: 938px;
     padding-left: 62px;

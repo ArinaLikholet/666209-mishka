@@ -27,6 +27,28 @@
   box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
 }
 
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-nav__list {
   @include indents;
   list-style: none;
@@ -82,7 +104,7 @@
   fill: $black;
 }
 
-.main-nav__link:hover .main-nav__icon--search,
+.main-nav__icon--search:hover,
 .main-nav__link:focus .main-nav__icon--search,
 .main-nav__link:hover .main-nav__icon--cart,
 .main-nav__link:focus .main-nav__icon--cart {
