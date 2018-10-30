@@ -10,8 +10,7 @@
 }
 
 .form__wrap {
-  @include indents(0, 0 30px);
-  padding-bottom: 19px;
+  @include indents(0, 0 30px 27px);
 }
 
 .form__title {
@@ -35,7 +34,7 @@
 }
 
 .form__inner {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .form__wrap--color {
@@ -154,7 +153,7 @@
 }
 
 .form__wrap--contact .form__title {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 
 .form__label {
@@ -285,13 +284,14 @@
   fill: $black;
   opacity: 0.2;
 }
+
 // Планшет
 
 @media (min-width: $tablet) {
   .form-description {
     font-size: 17px;
     line-height: 30px;
-    margin: 67px 50px 20px;
+    margin: 67px 50px 16px;
   }
 
   .form__order-wrapper:nth-of-type(even) {
@@ -315,7 +315,7 @@
   }
 
   .form__inner {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   .form__wrap--color .form__inner {
@@ -455,13 +455,13 @@
 @media (min-width: $descktop) {
   .form-description {
     width: 680px;
-    margin: 133px auto 0;
+    margin: 120px auto 9px;
   }
 
   .form__wrap {
     max-width: 938px;
-    padding-left: 62px;
     margin: 0 auto;
+    padding: 46px 50px 29px;
   }
 
   .form__title {
@@ -489,13 +489,21 @@
   }
 
   .form__label {
-    padding-left: 10px;
-    padding-right: 27px;
+    padding-left: 17px;
+    padding-right: 24px;
   }
 
   .form__wrap--contact .form__title,
   .form__wrap--message .form__title {
     width: 110px;
+  }
+
+  .form__label-checkbox {
+    padding: 19px 0 20px 100px;
+  }
+
+  .form__input {
+    padding: 16px 16px 16px 0;
   }
 
   .form__message {
