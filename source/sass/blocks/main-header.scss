@@ -15,11 +15,15 @@
     position: absolute;
     height: 64px;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f1f1f1;
     z-index: -1;
     bottom: 0;
     left: 0;
     border-top: $border;
+  }
+
+  .main-header--index::after {
+    background-color: #fafafa;
   }
 
   .main-header__delivery {

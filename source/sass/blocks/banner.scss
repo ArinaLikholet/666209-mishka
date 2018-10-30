@@ -30,13 +30,12 @@
   width: 245px;
 }
 
-
 // Планшет
 
 @media (min-width: $tablet) {
   .banner {
     position: relative;
-    min-height: 225px;
+    min-height: 162px;
   }
 
   .banner::after {
@@ -63,10 +62,14 @@
     }
   }
 
+  .banner__title--index {
+    margin-top: 88px;
+  }
+
   .banner__title {
     @include font-bold(43px, 50px);
     width: 500px;
-    margin-top: 88px;
+    margin-top: 33px;
   }
 }
 
@@ -74,7 +77,7 @@
 
 @media (min-width: $descktop) {
   .banner {
-    min-height: 254px;
+    min-height: 190px;
   }
 
   .banner--toys {
@@ -93,6 +96,7 @@
 
   .banner--toys .banner__title {
     width: 615px;
+    margin-top: 88px;
   }
 
   .banner__delivery {
