@@ -182,7 +182,7 @@
 
   .main-nav__item--logo {
     flex-grow: 1;
-    width: 40%;
+    width: 44%;
     margin-right: auto;
   }
 
@@ -217,7 +217,7 @@
   }
 
   .main-nav__item--search {
-    width: 50px;
+    width: 8%;
     padding-left: 30px;
     border-left: $border;
     border-right: $border;
@@ -230,9 +230,9 @@
 
   .main-nav__item--cart {
     flex-shrink: 0;
-    width: 264px;
+    width: 39%;
     text-align: right;
-    margin-right: 24px;
+    padding-right: 5px;
   }
 
   .main-nav__link--cart {

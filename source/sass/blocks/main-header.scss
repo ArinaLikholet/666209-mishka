@@ -1,0 +1,46 @@
+.main-header {
+  width: 100%;
+  position: relative;
+}
+
+.main-header__delivery {
+  display: none;
+}
+
+// Планшет
+
+@media (min-width: $tablet) {
+  .main-header::after {
+    content: "";
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    background-color: #fafafa;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    border-top: $border;
+  }
+
+  .main-header__delivery {
+    @include font(15px, 24px);
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 51px;
+    bottom: 6px;
+    color: $gray;
+    text-align: right;
+    display: block;
+    max-width: 100%;
+  }
+}
+
+// Десктоп
+
+@media (min-width: $descktop) {
+  .main-header__delivery {
+    max-width: 700px;
+    right: 315px;
+  }
+}

@@ -1,11 +1,11 @@
 .banner {
   width: 100%;
   min-height: 176px;
-  border-top: $border;
   background-color: $color-bg;
+  border: 1px solid transparent;
 }
 
-.banner__toys {
+.banner--toys {
   min-height: 355px;
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -25,14 +25,11 @@
 .banner__title {
   @include font-bold(27px, 30px);
   color: $black;
-  margin: 70px auto 0;
+  margin: 71px auto 0;
   text-align: center;
+  width: 245px;
 }
 
-.banner__toys .banner__title {
-  width: 245px;
-  margin-top: 71px;
-}
 
 // Планшет
 
@@ -40,7 +37,6 @@
   .banner {
     position: relative;
     min-height: 225px;
-    margin-top: -64px;
   }
 
   .banner::after {
@@ -55,11 +51,11 @@
     background-repeat: repeat-x;
   }
 
-  .banner__toys {
-    min-height: 745px;
+  .banner--toys {
+    min-height: 682px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center -62px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -67,24 +63,10 @@
     }
   }
 
-  .banner__delivery {
-    @include font(15px, 24px);
-    color: $gray;
-    text-align: right;
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 18px 50px 20px 350px;
-  }
-
   .banner__title {
     @include font-bold(43px, 50px);
-    margin-top: 34px;
-  }
-
-  .banner__toys .banner__title {
     width: 500px;
-    margin-top: 91px;
+    margin-top: 88px;
   }
 }
 
@@ -95,15 +77,13 @@
     min-height: 254px;
   }
 
-  .banner__toys {
-    min-height: 745px;
+  .banner--toys {
+    min-height: 680px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -111,7 +91,7 @@
     @include font-bold(53px, 57px);
   }
 
-  .banner__toys .banner__title {
+  .banner--toys .banner__title {
     width: 615px;
   }
 
