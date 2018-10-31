@@ -43,8 +43,12 @@
 // Десктоп
 
 @media (min-width: $descktop) {
+  .main-header::after {
+    border: none;
+  }
+
   .main-header__delivery {
     max-width: 700px;
-    right: 315px;
+    right: 148px;
   }
 }

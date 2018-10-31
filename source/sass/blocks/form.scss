@@ -221,7 +221,7 @@
   @include font($font-size, 18px);
   font-family: $font-family;
   color: $gray;
-  border: 2px solid $mint_2;
+  border: 2px solid $black;
   outline: none;
   width: 85%;
   height: 104px;
@@ -481,7 +481,7 @@
   }
 
   .form__wrap--contact .form__inner {
-    width: 810px;
+    width: 820px;
   }
 
   .form__wrap--contact .form__input {
@@ -495,7 +495,7 @@
 
   .form__wrap--contact .form__title,
   .form__wrap--message .form__title {
-    width: 110px;
+    width: 117px;
   }
 
   .form__label-checkbox {

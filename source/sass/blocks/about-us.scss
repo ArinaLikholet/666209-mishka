@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet) {
   .about-us__wrapper {
-    @include indents(0, 64px 50px 0);
+    @include indents(0, 66px 50px 0);
   }
 
   .about-us__wrapper::before {
