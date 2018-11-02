@@ -15,20 +15,20 @@ mainNavToggle.addEventListener("click", function() {
 
 var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
-var btnProductWeek = document.querySelector(".product-week__btn");
-var btnCatalogItems = document.querySelectorAll(".catalog-item__btn");
+var productCardButton = document.querySelector(".product-card__button");
+var cardButton = document.querySelectorAll(".card__button");
 
-if (btnProductWeek != null) {
-  btnProductWeek.addEventListener("click", function(event) {
+if (productCardButton != null) {
+  productCardButton.addEventListener("click", function(event) {
     event.preventDefault();
     modal.classList.add("modal--show");
     overlay.classList.add("overlay--show");
   });
 }
 
-if (btnCatalogItems.length != 0) {
-  for (var i = 0; i < btnCatalogItems.length; i++) {
-    btnCatalogItems[i].addEventListener("click", function(event) {
+if (cardButton.length != 0) {
+  for (var i = 0; i < cardButton.length; i++) {
+    cardButton [i].addEventListener("click", function(event) {
       event.preventDefault();
       modal.classList.add("modal--show");
       overlay.classList.add("overlay--show");

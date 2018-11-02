@@ -47,10 +47,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 102px;
-  height: 78px;
+  width: 101px;
+  height: 77px;
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
   border: none;
   font-size: 0;
   outline: none;
@@ -75,7 +76,7 @@
   @include indents;
   @include font(13px, 24px);
   color: $gray;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .production__icon {

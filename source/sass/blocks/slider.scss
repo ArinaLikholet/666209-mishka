@@ -33,7 +33,7 @@
 
 .slider__nav {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .slider__button {
@@ -109,5 +109,10 @@
 
   .slider__author {
     margin-top: 40px;
+  }
+
+  .slider__nav {
+    top: 179px;
+    width: 20%;
   }
 }

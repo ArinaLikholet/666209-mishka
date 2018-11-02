@@ -131,6 +131,10 @@
   }
 
   .card__description {
+    margin: 11px 0 3px;
+  }
+
+  .card__description a {
     @include font-bold(20px, 24px);
   }
 
@@ -165,13 +169,17 @@
   }
 
   .card {
-    @include indents;
-    margin-bottom: 50px;
+    @include indents();
+    margin-bottom: 58px;
     flex-direction: column;
   }
 
   .card:not(:nth-of-type(3n)) {
     margin-right: 50px;
+  }
+
+  .card__description {
+    margin-top: 15px;
   }
 
   .card__img-link {
@@ -183,10 +191,19 @@
   .card__info {
     flex-grow: 1;
     width: 316px;
-    padding-top: 8px;
+    padding-top: 0;
   }
 
   .card__text {
-    padding: 0 0 10px;
+    padding: 0 0 5px;
+  }
+
+  .card__price {
+    padding-top: 0;
+    padding-bottom: 4px;
+  }
+
+  .card__order {
+    margin: 0;
   }
 }
