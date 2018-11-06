@@ -60,6 +60,10 @@
   background-color: $white;
 }
 
+.main-nav__item--delivery {
+  display: none;
+}
+
 .main-nav__link {
   @include indents(0, 27px 0);
   @include font-bold($font-size, 1.4);
@@ -242,6 +246,19 @@
   .main-nav__item--extra {
     display: none;
   }
+
+  .main-nav__item--delivery {
+    @include font(15px, 24px);
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 51px;
+    bottom: 21px;
+    color: $gray;
+    text-align: right;
+    display: block;
+    max-width: 100%;
+  }
 }
 
 // Десктоп
@@ -318,5 +335,9 @@
 
   .main-nav__link--search {
     padding-left: 13px;
+  }
+
+  .main-nav__item--delivery {
+    min-width: 700px;
   }
 }

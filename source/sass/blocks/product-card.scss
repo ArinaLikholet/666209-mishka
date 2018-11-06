@@ -1,8 +1,4 @@
 .product-card {
-  @include indents;
-}
-
-.product-card__title-wrapper {
   @include indents(0, 30px);
   padding-bottom: 35px;
 }
@@ -59,7 +55,7 @@
 // Планшет
 
 @media (min-width: $tablet) {
-  .product-card__title-wrapper {
+  .product-card {
     @include indents(0 auto, 50px);
     position: relative;
     padding-top: 46px;
@@ -120,7 +116,7 @@
 // Десктоп
 
 @media (min-width: $descktop) {
-  .product-card__title-wrapper {
+  .product-card {
     max-width: 1050px;
     padding-top: 125px;
     padding-bottom: 71px;

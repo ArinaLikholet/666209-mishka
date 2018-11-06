@@ -1,9 +1,5 @@
 .promo-links {
   margin: -71px auto 0;
-}
-
-.promo-links__list {
-  @include indents;
   list-style: none;
 }
 
@@ -69,14 +65,11 @@
 
 @media (min-width: $tablet) {
   .promo-links {
+    display: flex;
+    padding: 0 50px;
     position: relative;
     z-index: 2;
     margin-top: -118px;
-  }
-
-  .promo-links__list {
-    display: flex;
-    padding: 0 50px;
   }
 
   .promo-links__item {

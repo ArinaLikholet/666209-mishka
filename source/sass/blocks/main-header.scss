@@ -3,9 +3,6 @@
   position: relative;
 }
 
-.main-header__delivery {
-  display: none;
-}
 
 // Планшет
 
@@ -47,7 +44,4 @@
     border: none;
   }
 
-  .main-header__delivery {
-    max-width: 700px;
-  }
 }
