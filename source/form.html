@@ -37,7 +37,7 @@
     <ul class="main-nav__list">
 
       <li class="main-nav__item main-nav__item--logo">
-        <a class="main-nav__link main-nav__link--logo" href="index.html">
+        <a class="main-nav__link main-nav__link--logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -51,7 +51,7 @@
       </li>
 
       <li class="main-nav__item main-nav__item--form">
-        <a class="main-nav__link main-nav__link--form">Вязание на заказ</a>
+        <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
       </li>
 
       <li class="main-nav__item main-nav__item--search">
@@ -77,9 +77,13 @@
       <li class="main-nav__item main-nav__item--extra">
         <a class="main-nav__link main-nav__link--extra" href="salary.html">Распродажа</a>
       </li>
+
+      <li class="main-nav__delivery main-header__delivery">
+        Бесплатная доставка по России
+      </li>
     </ul>
   </nav>
-  <p class="main-header__delivery">Бесплатная доставка по России</p>
+
 </header>
 
 
@@ -187,12 +191,11 @@
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <a class="main-footer__logo">
+    <a class="main-footer__logo" href="index.html">
       <svg class="main-footer__logo--svg" width="102" height="34">
         <use xlink:href="img/sprite.svg#logo-footer"></use>
       </svg>
     </a>
-
 
     <ul class="social-list">
       <li class="social-list__item">
@@ -219,12 +222,14 @@
     </ul>
 
     <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
+
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <b class="copyright__text">Разработано</b>
         <svg class="copyright__icon" width="27" height="34">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
-        HTML Academy</a>
+        HTML Academy
+      </a>
     </div>
   </div>
 </footer>

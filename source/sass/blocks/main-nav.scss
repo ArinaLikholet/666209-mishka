@@ -3,6 +3,10 @@
   min-height: 78px;
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
 .main-nav__toggle {
   position: absolute;
   z-index: 5;
@@ -247,7 +251,7 @@
     display: none;
   }
 
-  .main-nav__item--delivery {
+  .main-nav__delivery {
     @include font(15px, 24px);
     content: "";
     position: absolute;

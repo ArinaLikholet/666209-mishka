@@ -1,5 +1,5 @@
 .production {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   padding: 0 30px;
   outline: none;
 }
@@ -20,7 +20,7 @@
 .production__header {
   display: flex;
   align-items: center;
-  padding: 25px 30px;
+  padding: 20px 30px;
 }
 
 .production__title {
@@ -69,14 +69,14 @@
 }
 
 .production__description {
-  padding: 28px 34px 32px;
+  padding: 30px 34px 35px;
 }
 
 .production__text {
   @include indents;
   @include font(13px, 24px);
   color: $gray;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
 }
 
 .production__icon {
@@ -186,6 +186,6 @@
   .production__icon {
     display: block;
     margin-left: 50px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 }

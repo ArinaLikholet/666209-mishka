@@ -78,37 +78,41 @@
       <li class="main-nav__item main-nav__item--extra">
         <a class="main-nav__link main-nav__link--extra" href="salary.html">Распродажа</a>
       </li>
+
+      <li class="main-nav__delivery main-header__delivery">Бесплатная доставка по России
+      </li>
     </ul>
   </nav>
-  <p class="main-header__delivery">Бесплатная доставка по России</p>
+
 </header>
 
 
 <main class="page-main">
   <section class="banner banner--toys">
     <h1 class="banner__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+
+    <ul class="promo-links">
+
+    <li class="promo-links__item promo-links__item--interior">
+      <a class="promo-links__link promo-links__link--interior" href="card-interior.html"><span class="promo-links__title">Предметы интерьера</span>
+        <svg class="promo-links__icon" width="41" height="62">
+          <use xlink:href="img/sprite.svg#icon-interior"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="promo-links__item promo-links__item--toys">
+      <a class="promo-links__link promo-links__link--toys" href="card-toys.html"><span class="promo-links__title">Детские игрушки</span>
+        <svg class="promo-links__icon" width="60" height="60">
+          <use xlink:href="img/sprite.svg#icon-toy"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
   </section>
-  <div class="promo-links">
 
-    <ul class="promo-links__list">
 
-      <li class="promo-links__item">
-        <a class="promo-links__link promo-links__link--interior" href="card-interior.html"><span class="promo-links__title">Предметы интерьера</span>
-          <svg class="promo-links__icon" width="41" height="62">
-            <use xlink:href="img/sprite.svg#icon-interior"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="promo-links__item">
-        <a class="promo-links__link promo-links__link--toys" href="card-toys.html"><span class="promo-links__title">Детские игрушки</span>
-          <svg class="promo-links__icon" width="60" height="60">
-            <use xlink:href="img/sprite.svg#icon-toy"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <div class="product-card">
     <div class="product-card__title-wrapper">
@@ -327,12 +331,14 @@
     </ul>
 
     <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
+
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <b class="copyright__text">Разработано</b>
         <svg class="copyright__icon" width="27" height="34">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
-        HTML Academy</a>
+        HTML Academy
+      </a>
     </div>
   </div>
 </footer>

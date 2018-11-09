@@ -22,19 +22,6 @@
   .main-header--index::after {
     background-color: #fafafa;
   }
-
-  .main-header__delivery {
-    @include font(15px, 24px);
-    content: "";
-    position: absolute;
-    z-index: 1;
-    right: 51px;
-    bottom: 6px;
-    color: $gray;
-    text-align: right;
-    display: block;
-    max-width: 100%;
-  }
 }
 
 // Десктоп
@@ -43,5 +30,4 @@
   .main-header::after {
     border: none;
   }
-
 }

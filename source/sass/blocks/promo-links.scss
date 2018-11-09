@@ -1,5 +1,6 @@
 .promo-links {
-  margin: -71px auto 0;
+  margin: 123px auto 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -69,7 +70,7 @@
     padding: 0 50px;
     position: relative;
     z-index: 2;
-    margin-top: -118px;
+    margin-top: 373px;
   }
 
   .promo-links__item {
@@ -90,5 +91,6 @@
 @media (min-width: $descktop) {
   .promo-links {
     max-width: 1150px;
+    margin-top: 361px;
   }
 }

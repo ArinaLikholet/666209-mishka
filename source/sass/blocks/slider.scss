@@ -86,7 +86,7 @@
 
   .slider__nav {
     position: absolute;
-    top: 224px;
+    bottom: -7px;
     right: 0;
     width: 26%;
   }
@@ -114,5 +114,9 @@
   .slider__nav {
     top: 179px;
     width: 20%;
+  }
+
+  .slider__author-name {
+    @include font(17px, 30px);
   }
 }

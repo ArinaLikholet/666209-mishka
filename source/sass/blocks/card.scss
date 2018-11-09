@@ -106,7 +106,7 @@
 
 @media (min-width: $tablet) {
   .card__wrapper {
-    padding: 78px 50px 0;
+    padding: 77px 50px 0;
   }
 
   .card {
@@ -126,12 +126,12 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    padding: 5px 28px;
+    padding: 0 28px;
     box-sizing: border-box;
   }
 
   .card__description {
-    margin: 11px 0 3px;
+    margin-bottom: 4px;
   }
 
   .card__description a {
@@ -141,10 +141,6 @@
   .card__text {
     @include font(15px, 2);
     padding: 0;
-  }
-
-  .card__order {
-    margin-bottom: 6px;
   }
 
   .card__price {

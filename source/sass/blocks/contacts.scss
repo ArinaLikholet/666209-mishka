@@ -73,7 +73,7 @@
 
 .contacts__button {
   @include font-bold(18px, 20px);
-  margin: 35px 30px;
+  margin: 40px 30px;
 }
 
 .contacts__icon {
@@ -123,7 +123,8 @@
   .contacts__button {
     @include font-bold(18px, 24px);
     width: 226px;
-    margin: 43px auto 50px;
+    margin: 52px auto;
+    padding-bottom: 12px;
   }
 
   .contacts__icon {

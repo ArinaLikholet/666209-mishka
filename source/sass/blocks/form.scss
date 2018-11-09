@@ -16,7 +16,7 @@
 .form__title {
   @include indents;
   @include caps(700, $font-size, 18px);
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   color: $mint_1;
   position: relative;
   display: block;
@@ -38,7 +38,7 @@
 }
 
 .form__wrap--color {
-  padding-bottom: 11px;
+  padding-bottom: 12px;
 }
 
 .form__wrap--color .form__inner {
@@ -65,10 +65,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 36px;
-    height: 36px;
+    box-sizing: border-box;
+    top: 3px;
+    left: 2px;
+    width: 39px;
+    height: 39px;
     border: 2px solid $gray;
     border-radius: 50%;
   }
@@ -76,10 +77,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 18px;
-    height: 18px;
+    box-sizing: border-box;
+    top: 14px;
+    left: 14px;
+    width: 16px;
+    height: 16px;
     background-color: $mint_2;
     border-radius: 50%;
     display: none;
@@ -96,10 +98,11 @@
   &::before {
     content: "";
     position: absolute;
+    box-sizing: border-box;
     top: 4px;
     left: 0;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border: 2px solid $gray;
   }
 
@@ -169,7 +172,7 @@
   box-shadow: inset 0 -2px 0 $black;
   outline: none;
   width: 99%;
-  padding: 16px 1px;
+  padding: 18px 1px;
 
   &:hover,
   &:focus,
@@ -226,6 +229,7 @@
   width: 85%;
   height: 104px;
   padding: 17px;
+  resize: none;
 
   &:hover,
   &:focus,
@@ -289,9 +293,9 @@
 
 @media (min-width: $tablet) {
   .form-description {
-    font-size: 17px;
-    line-height: 30px;
+    @include font(17px, 30px);
     margin: 67px 50px 16px;
+    width: 666px;
   }
 
   .form__order-wrapper:nth-of-type(even) {
@@ -299,7 +303,7 @@
   }
 
   .form__wrap {
-    @include indents(0, 45px 50px 33px);
+    @include indents(0, 43px 50px 33px);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -329,6 +333,10 @@
     margin-bottom: 23px;
   }
 
+  .form__wrap--contact {
+    padding-top: 39px;
+  }
+
   .form__wrap--contact .form__inner {
     width: 100%;
   }
@@ -340,7 +348,7 @@
 
   .form__title {
     width: 23%;
-    padding-top: 18px;
+    padding-top: 17px;
   }
 
   .form__title::after {
@@ -355,16 +363,17 @@
     @include font-bold(19px, 21px);
 
     &::before {
-      left: 11px;
-      width: 50px;
-      height: 50px;
+      left: 15px;
+      top: 0;
+      width: 52px;
+      height: 52px;
     }
 
     &::after {
-      top: 16px;
-      left: 27px;
-      width: 23px;
-      height: 23px;
+      top: 15px;
+      left: 32px;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -377,13 +386,13 @@
 
     &::before {
       left: 14px;
-      width: 50px;
-      height: 50px;
+      width: 53px;
+      height: 51px;
     }
 
     &::after {
-      top: 17px;
-      left: 27px;
+      top: 14px;
+      left: 23px;
       width: 28px;
       height: 14px;
     }
@@ -409,7 +418,7 @@
   }
 
   .form__wrap--message {
-    padding-top: 50px;
+    padding-top: 47px;
   }
 
   .form__wrap--contact .form__title,
@@ -427,7 +436,7 @@
     align-items: baseline;
 
     @include indents(50px, 0);
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .form__caption {
@@ -501,8 +510,8 @@
     &::before {
       top: 3px;
       left: 8px;
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
     }
 
     &::after {
@@ -537,6 +546,23 @@
 
   .form__message {
     width: 71%;
+    padding: 15px;
+
+    &::-webkit-input-placeholder {
+      @include font(19px, 18px);
+    }
+
+    &::-moz-placeholder {
+      @include font(19px, 18px);
+    }
+
+    &:-ms-input-placeholder {
+      @include font(19px, 18px);
+    }
+
+    &:-moz-placeholder {
+      @include font(19px, 18px);
+    }
   }
 
   .form__footer {

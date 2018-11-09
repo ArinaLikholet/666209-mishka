@@ -36,12 +36,12 @@
     fill: $black;
   }
 
-  .main-footer__logo--svg:hover,
-  .main-footer__logo--svg:focus {
+  .main-footer__logo[href] .main-footer__logo--svg:hover,
+  .main-footer__logo[href] .main-footer__logo--svg:focus {
     fill: $mint_3;
   }
 
-  .main-footer__logo--svg:active {
+  .main-footer__logo[href] .main-footer__logo--svg:active {
     fill: $mint_3;
     opacity: 0.3;
   }
@@ -60,6 +60,6 @@
   .main-footer__wrapper {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 28px 50px;
+    padding: 30px 50px;
   }
 }

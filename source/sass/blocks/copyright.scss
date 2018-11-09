@@ -1,20 +1,30 @@
 .copyright {
-  padding: 23px 0;
-  text-align: center;
+  padding: 23px 0 12px;
 }
 
 .copyright__text {
   @include font-bold(19px, 20px);
   color: $black;
-  display: inline-block;
+
   margin-right: 30px;
-  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
   font-size: 0;
+  text-decoration: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright__icon:hover,
@@ -35,15 +45,11 @@
 
 @media (min-width: $tablet) {
   .copyright {
-    text-align: right;
     width: 33%;
   }
 
-  .copyright__text {
-    margin-right: 24px;
-  }
-
   .copyright__link {
-    padding-top: 5px;
+    justify-content: flex-end;
+    padding: 0;
   }
 }
