@@ -1,9 +1,13 @@
 .reviews {
-  position: relative;
   padding-bottom: 19px;
 }
 
-.reviews::after {
+.reviews__wrapper {
+  position: relative;
+  padding: 0 30px 34px;
+}
+
+.reviews__wrapper::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -12,10 +16,6 @@
   content: "";
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: auto 7px;
-}
-
-.reviews__wrapper {
-  padding: 0 30px 34px;
 }
 
 .reviews__slider {
@@ -43,11 +43,6 @@
       background-size: 350px auto;
       background-position: 0 30px;
     }
-  }
-
-  .reviews::after {
-    height: 17px;
-    background-size: auto 17px;
   }
 
   .reviews__wrapper {

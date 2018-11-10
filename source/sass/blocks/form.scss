@@ -172,7 +172,7 @@
   box-shadow: inset 0 -2px 0 $black;
   outline: none;
   width: 99%;
-  padding: 18px 1px;
+  padding: 16px 1px;
 
   &:hover,
   &:focus,
@@ -440,14 +440,15 @@
   }
 
   .form__caption {
-    order: 1;
-
     @include font($font-size, 30px);
+    order: 1;
+    margin-left: 20px;
   }
 
   .form__button {
     width: 230px;
     margin-top: 0;
+    flex-shrink: 0;
   }
 
   .form__icon--phone {
