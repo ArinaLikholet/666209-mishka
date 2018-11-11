@@ -37,7 +37,7 @@
 }
 
 .card__description {
-  @include indents(16px 0 10px);
+  @include indents(31px 0 10px);
 }
 
 .card__description a {
@@ -45,6 +45,8 @@
   @include font-bold($font-size, 24px);
   color: $black;
   text-decoration: none;
+  line-height: 1.1em;
+  display: block;
 }
 
 .card__description:hover,
@@ -66,7 +68,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 0 0 13px;
+  margin: 0 0 19px;
   border-top: $border;
 }
 
@@ -131,7 +133,7 @@
   }
 
   .card__description {
-    margin-bottom: 4px;
+    margin: 28px 0 4px;
   }
 
   .card__description a {
@@ -145,6 +147,10 @@
 
   .card__price {
     @include font-bold($font-size, 1.4);
+  }
+
+  .card__order {
+    margin: 0 0 11px;
   }
 
   .card__button {
@@ -175,7 +181,8 @@
   }
 
   .card__description {
-    margin-top: 15px;
+    margin: 0;
+    padding: 25px 0 5px;
   }
 
   .card__img-link {
@@ -191,12 +198,12 @@
   }
 
   .card__text {
-    padding: 0 0 5px;
+    padding: 0 0 16px;
   }
 
   .card__price {
     padding-top: 0;
-    padding-bottom: 4px;
+    padding-bottom: 9px;
   }
 
   .card__order {

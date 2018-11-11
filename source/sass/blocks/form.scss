@@ -10,13 +10,13 @@
 }
 
 .form__wrap {
-  @include indents(0, 0 30px 30px);
+  @include indents(0, 0 30px 28px);
 }
 
 .form__title {
   @include indents;
   @include caps(700, $font-size, 18px);
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   color: $mint_1;
   position: relative;
   display: block;
@@ -42,7 +42,7 @@
 }
 
 .form__wrap--color .form__inner {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 
 .form__input-radio,
@@ -56,7 +56,7 @@
   position: relative;
   display: block;
   padding-left: 63px;
-  padding-top: 11px;
+  padding-top: 12px;
   color: $black;
   cursor: pointer;
 }
@@ -99,7 +99,7 @@
     content: "";
     position: absolute;
     box-sizing: border-box;
-    top: 4px;
+    top: 1px;
     left: 0;
     width: 40px;
     height: 40px;
@@ -109,7 +109,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: 8px;
     width: 21px;
     height: 11px;
@@ -139,7 +139,7 @@
 }
 
 .form__wrap--name {
-  padding-bottom: 13px;
+  padding-bottom: 7px;
 }
 
 .form__wrap--name .form__inner {
@@ -168,8 +168,8 @@
   @include font($font-size, 18px);
   font-family: $font-family;
   color: $gray;
-  border: none;
-  box-shadow: inset 0 -2px 0 $black;
+  border: 0;
+  border-bottom: 2px solid $black;
   outline: none;
   width: 99%;
   padding: 16px 1px;
@@ -224,6 +224,7 @@
   @include font($font-size, 18px);
   font-family: $font-family;
   color: $gray;
+  margin-top: 6px;
   border: 2px solid $black;
   outline: none;
   width: 85%;
@@ -295,7 +296,6 @@
   .form-description {
     @include font(17px, 30px);
     margin: 67px 50px 16px;
-    width: 666px;
   }
 
   .form__order-wrapper:nth-of-type(even) {
@@ -303,7 +303,7 @@
   }
 
   .form__wrap {
-    @include indents(0, 43px 50px 33px);
+    @include indents(0, 46px 42px 29px 47px);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -348,7 +348,7 @@
 
   .form__title {
     width: 23%;
-    padding-top: 17px;
+    padding-top: 19px;
   }
 
   .form__title::after {
@@ -391,8 +391,8 @@
     }
 
     &::after {
-      top: 14px;
-      left: 23px;
+      top: 16px;
+      left: 27px;
       width: 28px;
       height: 14px;
     }
@@ -418,7 +418,7 @@
   }
 
   .form__wrap--message {
-    padding-top: 47px;
+    padding-top: 44px;
   }
 
   .form__wrap--contact .form__title,

@@ -76,7 +76,7 @@
   @include indents;
   @include font(13px, 24px);
   color: $gray;
-  margin-bottom: 23px;
+  margin-bottom: 28px;
 }
 
 .production__icon {
@@ -108,7 +108,7 @@
   }
 
   .production__header {
-    padding: 30px;
+    padding: 32px;
   }
 
   .production__title {
@@ -159,7 +159,7 @@
   .production__header {
     display: block;
     width: 33%;
-    padding: 42px 0 32px;
+    padding: 42px 0 34px;
   }
 
   .production__title {
@@ -186,6 +186,6 @@
   .production__icon {
     display: block;
     margin-left: 50px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 }

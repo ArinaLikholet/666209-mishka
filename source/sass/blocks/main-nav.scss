@@ -112,6 +112,10 @@
   fill: $black;
 }
 
+.main-nav__icon--cart {
+  padding-right: 22px;
+}
+
 .main-nav__icon--search:hover,
 .main-nav__link:focus .main-nav__icon--search,
 .main-nav__link:hover .main-nav__icon--cart,
@@ -225,8 +229,8 @@
   }
 
   .main-nav__item--search {
-    width: 8%;
-    padding-left: 30px;
+    width: 7%;
+    padding-left: 33px;
     border-left: $border;
     border-right: $border;
   }
@@ -244,7 +248,7 @@
   }
 
   .main-nav__link--cart {
-    padding: 32px 0;
+    padding: 30px 0;
   }
 
   .main-nav__item--extra {

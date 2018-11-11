@@ -69,7 +69,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("js", function() {
-  return gulp.src(["source/js/script.js", "source/js/svg4everybody.js"])
+  return gulp.src("source/js/**/*.js")
     .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest("build/js"))

@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 176px;
   background-color: $color-bg;
-  border: 1px solid transparent;
+  border-top: 1px solid transparent;
 }
 
 .banner--toys {
@@ -70,7 +70,7 @@
   .banner__title {
     @include font-bold(43px, 50px);
     width: 500px;
-    margin-top: 33px;
+    margin-top: 30px;
   }
 }
 

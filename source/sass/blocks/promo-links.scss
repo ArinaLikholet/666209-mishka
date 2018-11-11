@@ -81,7 +81,7 @@
     padding: 28px 35px;
   }
 
-  .promo-links__name {
+  .promo-links__title {
     @include font-bold(20px, 30px);
   }
 }
@@ -90,7 +90,7 @@
 
 @media (min-width: $descktop) {
   .promo-links {
-    max-width: 1150px;
+    max-width: 1050px;
     margin-top: 361px;
   }
 }
