@@ -16,7 +16,7 @@
 .form__title {
   @include indents;
   @include caps(700, $font-size, 18px);
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   color: $mint_1;
   position: relative;
   display: block;
@@ -500,6 +500,14 @@
     width: 78%;
   }
 
+  .form__inner {
+    margin-bottom: 22px;
+  }
+
+  .form__wrap--name .form__inner {
+    margin-bottom: 20px;
+  }
+
   .form__label {
     padding-left: 13px;
     padding-right: 24px;
@@ -525,6 +533,7 @@
 
   .form__wrap--contact {
     padding-top: 40px;
+    padding-bottom: 27px;
   }
 
   .form__wrap--contact .form__title,
